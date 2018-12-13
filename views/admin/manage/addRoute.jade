@@ -1,0 +1,65 @@
+extends ../../_layouts/default
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+block assignments
+	-mainLink = 'ADMIN'
+	-subLink = 'MANAGE_AREA'
+	-pageTitle = 'Add New Route'
+	-postUrl = '/admin/manage/addRoute'
+	-cancelUrl = '/admin/manage/main'
+	-baseUrl = cancelUrl
+	-ctrl = 'uploadCtrl'
+	
+block content
+	h1 Add New Route
+	hr
+	.row
+		.col-md-6
+			form.form-horizontal(method='POST', action=postUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						table(class='addRoute')
+							tr
+								td(class='tdRoute')
+									a Select Area
+								td
+									select(name='areaId', class='routelength')
+										option(value='') Select Value
+										each area in areas
+											option(value='#{area._id}') #{area.name}
+							tr
+								td(class='tdRoute')
+									a Route Name
+								td
+									input(type='text', name='nameOfRoute', value='',class='routelength')
+							tr
+								td(class='tdRoute')
+									a Seat Config.
+								td
+									select(name='setConfig', class='routelength')
+										option(value='') Select Value
+										option(value='0') Two In and One Driver Back
+										option(value='1') Three In and Two Driver Back
+										option(value='2') Two Front and Four Back
+							tr
+								td(class='tdRoute')
+									a Map Center Lat.
+								td
+									input(type='text', name='mapCenterLat', value='', class='routelength')
+							tr
+								td(class='tdRoute')
+									a Map Center lng.
+								td
+									input(type='text', name='mapCenterLng', value='', class='routelength')
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Save')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)

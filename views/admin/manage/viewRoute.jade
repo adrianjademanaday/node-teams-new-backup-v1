@@ -1,0 +1,26 @@
+extends ../../_layouts/default
+
+block assignments
+	-mainLink = 'ADMIN'
+	-subLink = 'MANAGE_AREA'
+	-pageTitle = 'View Routes'
+	
+block content
+	h1 #{name.name} routes
+	hr
+	.addAreaRoute
+		a(href='/admin/manage/initAddRoute') Add Route
+		
+	table(class='areaTable')
+		th Route Name
+		th Seat Configuration
+		th Total Survey
+		th Options
+		each route in routes
+			tr(class='areaChange')
+				td(width='27%') #{route.name}
+				td(width='30%') #{route.seatConfiguration.name}
+				td(width='15%') #{route.totalSurveys}
+				td(width='30%')
+					a(class='edit', href='/admin/manage/initEditRoute?id=#{route._id}&areaId=#{route.areaId}') Update
+					a(class='delete', href='/admin/manage/removeRoute?id=#{route.areaId}&name=#{name.name}&removeId=#{route._id}') Delete

@@ -1,0 +1,109 @@
+extends ../../_layouts/default
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+append styleIncludes
+	link(rel='stylesheet', href='/resources/css/leaflet.css')
+	script(type='text/javascript', src='http://maps.google.com/maps/api/js?v=3.2&sensor=false')
+	script(type='text/javascript', src='/resources/js/leaflet.label-src.js')
+
+block assignments
+	-mainLink = 'REPORTS'
+	-subLink = 'HOURLY_STATS'
+	-pageTitle = 'Hourly Stats'
+	-ctrl = 'showCtrl'
+	//-hours = [{id: 7, name: '6 AM'}, {id: 8, name: '7 AM'}, {id: 9, name: '8 AM'}, {id: 10, name: '9 AM'}, {id: 11, name: '10 AM'}, {id: 12, name: '11 AM'}, {id: 13, name: '12 PM'}, {id: 14, name: '1 PM'}, {id: 15, name: '2 PM'}, {id: 16, name: '3 PM'}, {id: 17, name: '4 PM'}, {id: 18, name: '5 PM'}, {id: 19, name: '6 PM'}, {id: 20, name: '7 PM'}, {id: 21, name: '8 PM'}]
+	-hours = [{id: 6, name: '6 AM'}, {id: 7, name: '7 AM'}, {id: 8, name: '8 AM'}, {id: 9, name: '9 AM'}, {id: 10, name: '10 AM'}, {id: 11, name: '11 AM'}, {id: 12, name: '12 PM'}, {id: 13, name: '1 PM'}, {id: 14, name: '2 PM'}, {id: 15, name: '3 PM'}, {id: 16, name: '4 PM'}, {id: 17, name: '5 PM'}, {id: 18, name: '6 PM'}, {id: 19, name: '7 PM'}, {id: 20, name: '8 PM'}]
+	
+block content
+	h2 Hourly Stats
+
+	.row
+			.col-md-9
+				div(id='map', style='height: 650px;')
+
+			.col-md-3
+				form.form-horizontal
+					+ngSelectNgChange('area', 'Area', areas, areaId, 'area', 'loadRoutes()')
+					+ngSelectDependentNgChange('route', 'Route', routeId, 'route', 'routes', 'loadSamples()')
+					+ngSelectNgChange('hour', 'Hour', hours, hourId, 'hour')
+					+ngSelectWithNoSelectedText('sample', 'Sample', sampleNumbers, 'sampleNumber', 'samples', 'All')
+					+ngFormGroup('', ' ')
+						+ngSubmitButton('Fetch', '', 'loadReport()')
+					
+				hr
+				h3(ng-model='tableTitle')
+				table.table.table-striped.table-bordered.table-condensed
+					thead
+						th Stat
+						th Value
+						th Unit
+					tbody
+						tr
+							td Number of Samples
+							td.text-right
+								strong {{report.numberOfSamples}}
+							td
+						tr
+							td Distance Travelled
+							td.text-right
+								strong {{report.totalDistanceTravelled}}
+							td Km
+						tr
+							td Boarding
+							td.text-right
+								strong {{report.totalBoarding}}
+							td
+						tr
+							td Alighting
+							td.text-right
+								strong {{report.totalAlighting}}
+							td
+						tr
+							td Ave. Distance Per Trip
+							td.text-right
+								strong {{report.averageDistanceTravelledPerTrip}}
+							td Km
+						tr
+							td Ave. Speed Per Trip
+							td.text-right
+								strong {{report.averageSpeedPerTrip}}
+							td Kph
+						tr
+							td 50th Percentile Speed
+							td.text-right
+								strong {{report._50thPercentileSpeed}}
+							td Kph
+						tr
+							td 80th Percentile Speed
+							td.text-right
+								strong {{report._80thPercentileSpeed}}
+							td Kph
+						tr
+							td Waiting Time
+							td.text-right
+								strong {{report.totalWaitingTime}}
+							td min
+						tr
+							td Moving Time with Load
+							td.text-right
+								strong {{report.totalMovingTimeWithLoad}}
+							td min
+						tr
+							td Max Speed
+							td.text-right
+								strong {{report.maxSpeed}}
+							td Kph
+						tr
+							td Trips
+							td.text-right
+								strong {{report.tripCount}}
+							td						
+
+block scriptIncludes
+	script(type='text/javascript', src='/resources/js/leaflet.js')
+	script(type='text/javascript', src='/resources/js/leaflet-google.js')
+	script(type='text/javascript', src='/controllers/reports/hourlyStats/showCtrl.js')
+	script.
+		initMap();

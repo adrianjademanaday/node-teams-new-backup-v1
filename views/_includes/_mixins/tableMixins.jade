@@ -1,0 +1,25 @@
+mixin pagination(url, page, totalResults, resultsPerPage, sortBy, sortOrder)
+	ul.pagination
+		li
+			a(href='#') &laquo;
+
+		-totalPages = Math.ceil(totalResults / resultsPerPage)
+
+		if page <= Math.floor(resultsPerPage / 2)
+			-first = 1
+		else if page >= totalPages - Math.floor(resultsPerPage / 2)
+			-first = totalPages - resultsPerPage + 1
+		else
+			-first = page - Math.floor(resultsPerPage / 2)
+
+		-for (var i = 0; i < resultsPerPage; i++)		
+			-current = first + i			
+				if page == current
+					li.active
+						a(href=baseUrl + '?p=' + current + '&sb=' + sortBy + '&so=' + sortOrder) #{current}
+				else
+					li
+						a(href=baseUrl + '?p=' + current + '&sb=' + sortBy + '&so=' + sortOrder) #{current}
+
+		li
+			a(href='#') &raquo;

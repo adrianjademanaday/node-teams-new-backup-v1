@@ -1,0 +1,31 @@
+extends ../../_layouts/layout_list
+
+include ../../_includes/_mixins/formMixins
+
+block assignments
+	-mainLink = 'MANAGE'
+	-subLink = 'ROUTES'
+	-pageTitle = 'List Routes'
+	-baseUrl = '/manage/routes'
+	-ctrl = 'routeCtrl'
+	-options = [{id: 1, name: 'AAA'}, {id: 2, name: 'BBB'}, {id: 3, name: 'CCC'}, {id: 4, name: 'DDD'}]	
+	-entities = routes
+
+block columns
+	th Name
+	th.col-md-3 Long Name
+
+block filters
+	th
+		input.form-control(name='name', value='')
+	th.col-md-3								
+		select.form-control(name='longName')
+			for o in options
+				option(value=o.name) #{o.name}
+
+block rows
+	td #{e.name}
+	td #{e.longName}
+
+block scriptIncludes
+	script(type='text/javascript', src='/controllers/manage/routes/routeCtrl.js')

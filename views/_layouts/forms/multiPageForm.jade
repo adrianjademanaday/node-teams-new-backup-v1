@@ -1,0 +1,21 @@
+extends ../multiPage
+
+block pageContent
+	.row
+		.col-md-6			
+			if multipart
+				form.form-horizontal(method=method, action=action, enctype='multipart/form-data')
+					+formContent
+			else
+				form.form-horizontal(method=method, action=action)			
+					+formContent
+
+mixin formContent
+	.row
+		.col-md-12
+			block formContent
+
+	.row
+		.col-md-12
+			hr
+			+formActions('manage/routes')

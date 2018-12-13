@@ -1,0 +1,70 @@
+extends ../../_layouts/forms/form
+
+include ../../_includes/_mixins/formMixins
+include ../../_includes/_mixins/ngFormMixins
+
+prepend assignments
+	-mainLink = 'DATA'
+	-subLink = 'SURVEY_DATA'
+	-cancelUrl = '/home'
+	-baseUrl = cancelUrl
+	-uploadUrl = '/data/surveyData/upload'
+	-pageTitle = 'Upload Survey Data'
+	-ctrl = 'uploadCtrl'
+
+block content
+	h1 #{pageTitle}
+		a(id='help', class='help', title='show tips',href='#help') Help?
+	hr
+
+	.row
+		.col-md-6			
+			form.form-horizontal(method='POST', action=uploadUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						+ngSelectNgChange('areaId', 'Area', areas, areaId, 'area', 'loadRoutes()')
+						+ngSelect('routeId', 'Route', routeId, 'route', 'routes')
+
+						.form-group
+							label.col-md-4.control-label(for='surveyData') Passenger Loads
+							.col-md-7									
+								input.form-control.input-md(name='surveyData', type='file', ng-model='surveyDataFilename', ng-change='updateFilenames()')
+						
+						+ngTextWithSuffix('outputZipFilename', 'Output Zip File', '.zip', outputZipFilename)
+
+						.form-group
+							label.col-md-4.control-label(for='createHourlyStats') Create Hourly Stats
+							.col-md-7
+								input(type='checkbox', name='createHourlyStats', checked='checked')
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label #{label}		
+							.col-md-10.well
+								+submitButton('Upload')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+		.help_box
+			h4
+				b Passenger Survey Data Processing
+				a(id='close', class='close') x
+			|1. Select the area of the uploaded file.
+			br
+			|2. Select the route of the uploaded file.
+			br
+			|3. Then choose the zip file and click upload.
+			br
+			b Located at: 
+			font(color='darkblue') teams/data/downloads/(name-of-zip-file)-output.zip
+			hr
+			h5
+				b Note:
+			i This is the 6th process. This process will create a routestop table on the database and stored the collected data of the uploaded file.
+			i The collected data that was stored on the database will be the references of the next or other processes.
+			br
+			br
+
+block scriptIncludes
+	script(type='text/javascript', src='/controllers/data/surveyData/uploadCtrl.js')

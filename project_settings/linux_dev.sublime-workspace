@@ -1,0 +1,1681 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"show",
+				"showBoardingOrAlighting"
+			],
+			[
+				"boardin",
+				"boardingAlightingCountsByStop	[]"
+			],
+			[
+				"boarding",
+				"boardingAlightingCountsByStopArray	[]"
+			],
+			[
+				"Boarding",
+				"boardingAlightingCountsByStopArray"
+			],
+			[
+				"value",
+				"valueOfPoint	(?)"
+			],
+			[
+				"SHOW",
+				"SHOW_BOARDINGS	(num)"
+			],
+			[
+				"board",
+				"boardingAlightingCountsByStop	[]"
+			],
+			[
+				"boar",
+				"boardingAlightingCountsByStop	(?)"
+			],
+			[
+				"ti",
+				"timeStamp	(?)"
+			],
+			[
+				"current",
+				"currentPercentage	(num)"
+			],
+			[
+				"currentper",
+				"currentPercentile	(num)"
+			],
+			[
+				"countsBy",
+				"countsBySpeedResults	{}"
+			],
+			[
+				"total",
+				"totalCount	(num)"
+			],
+			[
+				"E",
+				"EIGHTIETH_PERCENTILE_SPEED_INDEX	(num)"
+			],
+			[
+				"percent",
+				"percentileSpeed"
+			],
+			[
+				"speed",
+				"speedProfileOfTheHour	{}"
+			],
+			[
+				"curren",
+				"currentCountTotal	(num)"
+			],
+			[
+				"create",
+				"createCountsBySpeed()"
+			],
+			[
+				"hourly",
+				"hourlySpeedsBySample	(?)"
+			],
+			[
+				"number",
+				"numberOfSamples	(?)"
+			],
+			[
+				"hour",
+				"hourlySpeedsBySample	(?)"
+			],
+			[
+				"hourl",
+				"hourlySpeedOfSample	[]"
+			],
+			[
+				"sam",
+				"sample	{}"
+			],
+			[
+				"sa",
+				"sampleNumber	(num)"
+			],
+			[
+				"processVehicle",
+				"processVehicleOdMatrix(argumentsPackage, hour)"
+			],
+			[
+				"vehicleOd",
+				"vehicleOdMatrix	[]"
+			],
+			[
+				"outputFile",
+				"outputFilePath	(str)"
+			],
+			[
+				"output",
+				"outputZipFilePath	(?)"
+			],
+			[
+				"outp",
+				"outputFilePath	(str)"
+			],
+			[
+				"filter",
+				"filterVehicleOriginDestinationsByTheHour(vehicleOriginDestinations, hour)"
+			],
+			[
+				"vehicle",
+				"vehicleOriginDestinations	(?)"
+			],
+			[
+				"ve",
+				"vehicleOdMatrixByTheHour	[]"
+			],
+			[
+				"vehic",
+				"vehicleOdMatrixOfTheHour	[]"
+			],
+			[
+				"lat",
+				"latLng	(?)"
+			],
+			[
+				"stats",
+				"statsByTheHour	[]"
+			],
+			[
+				"reorder",
+				"reorderAreaStopsController	(?)"
+			],
+			[
+				"area",
+				"areaStop	(?)"
+			],
+			[
+				"out",
+				"outputFilePath	(?)"
+			],
+			[
+				"AREA",
+				"AREA_STOPS"
+			],
+			[
+				"areaSt",
+				"areaStopsCsv	(?)"
+			],
+			[
+				"fileDe",
+				"fileDetails	{}"
+			],
+			[
+				"file",
+				"fileDetails	{}"
+			],
+			[
+				"arg",
+				"argumentsPackage	{}"
+			],
+			[
+				"res",
+				"resolve"
+			],
+			[
+				"route",
+				"routeStops	{}"
+			],
+			[
+				"row",
+				"rowIndex	(?)"
+			],
+			[
+				"cl",
+				"cl	console.log"
+			],
+			[
+				"clear",
+				"clearSurveyDataOnly()"
+			],
+			[
+				"delete",
+				"deleteSurveyDataOnly"
+			],
+			[
+				"mod",
+				"module"
+			],
+			[
+				"stat",
+				"statsByTheHour	[]"
+			],
+			[
+				"average",
+				"averageSpeedPerTrip"
+			],
+			[
+				"_total",
+				"_totalBoarding	(num)"
+			],
+			[
+				"OUT_CURRE",
+				"OUT_CURRENT_LNG_INDEX	(num)"
+			],
+			[
+				"speedRecord",
+				"speedRecordPersistent	(?)"
+			],
+			[
+				"spee",
+				"speedProfilePersistent	(?)"
+			],
+			[
+				"mark",
+				"markerLayer	(?)"
+			],
+			[
+				"map",
+				"mapCenter"
+			],
+			[
+				"DEFA",
+				"DEFAULT_MAP_CENTER_LNG	(num)"
+			],
+			[
+				"mar",
+				"markers	[]"
+			],
+			[
+				"marker",
+				"markerLayer	(?)"
+			],
+			[
+				"add",
+				"addSpeedEntries(speedProfileByTheHour, statsByTheHourPersistent)"
+			],
+			[
+				"surve",
+				"surveyDataService	(?)"
+			],
+			[
+				"speedPro",
+				"speedProfilePersistent	[]"
+			],
+			[
+				"forEa",
+				"forEach"
+			],
+			[
+				"save",
+				"saveHourlyStats(statsByTheHour, statsByTheHourPersistent)"
+			],
+			[
+				"argue",
+				"argumentsPackage"
+			],
+			[
+				"stast",
+				"statsByTheHourPersistent	[]"
+			],
+			[
+				"time",
+				"timeDifference	(num)"
+			],
+			[
+				"tim",
+				"timeDifference	(num)"
+			],
+			[
+				"mAX",
+				"MAX_DISTANCE_DIFFERENCE"
+			],
+			[
+				"MAX_",
+				"MAX_DISTANCE_DIFFERENCE	(num)"
+			],
+			[
+				"TIME",
+				"TIME_FORMAT	(?)"
+			],
+			[
+				"CSV",
+				"CSV_LAT_INDEX	(?)"
+			],
+			[
+				"origin",
+				"originDestinations	[]"
+			],
+			[
+				"d",
+				"defer	(?)"
+			],
+			[
+				"tempo",
+				"temporarilyStoppedThreshold	(?)"
+			],
+			[
+				"moment",
+				"momentTime	(?)"
+			],
+			[
+				"HOUR",
+				"HOUR_INDEX	(num)"
+			],
+			[
+				"TOTAL_MOVING",
+				"TOTAL_MOVING_TIME_WITH_LOAD_PER_HOUR_INDEX	(num)"
+			],
+			[
+				"TR",
+				"TRIP_COUNT_PER_HOUR_HEADER	(str)"
+			],
+			[
+				"ACT",
+				"ACTUAL_DISTANCE_DIFFERENCE_INDEX	(num)"
+			],
+			[
+				"AVERAGE_SPEED",
+				"AVERAGE_SPEED_PER_TRIP_PER_HOUR_HEADER	(str)"
+			],
+			[
+				"AVERAGE",
+				"AVERAGE_SPEED_PER_TRIP_PER_HOUR_HEADER	(str)"
+			],
+			[
+				"TOTAL_DISTANCE_TRAVELLED_PER_HOUR_",
+				"TOTAL_DISTANCE_TRAVELLED_PER_HOUR_INDEX	(num)"
+			],
+			[
+				"HEADER",
+				"TOTAL_BOARDING_PER_HOUR_HEADER"
+			],
+			[
+				"totalTime",
+				"totalTime	(num)"
+			],
+			[
+				"MOVING",
+				"TOTAL_MOVING_TIME_WITH_LOAD_PER_HOUR_INDEX"
+			],
+			[
+				"sd",
+				"sdCsv	(?)"
+			],
+			[
+				"isVehic",
+				"isVehicleMovingOrTemporarilyStopped(surveyDataCsv)"
+			],
+			[
+				"surveyData",
+				"surveyDataCsvs	(?)"
+			],
+			[
+				"OUT_TIME",
+				"OUT_TIME_DIFFERENCE_INDEX	(num)"
+			],
+			[
+				"HAS",
+				"OUT_HAS_LOAD"
+			],
+			[
+				"tripCou",
+				"tripCount"
+			],
+			[
+				"TOTAL",
+				"TOTAL_DISTANCE_TRAVELLED_PER_HOUR_INDEX	(num)"
+			],
+			[
+				"AVERA",
+				"AVERAGE_DISTANCE_TRAVELLED_OD_PER_HOUR_INDEX	(num)"
+			],
+			[
+				"trip",
+				"tripCount	(num)"
+			],
+			[
+				"OUT",
+				"OUT_SPEED_INDEX	(num)"
+			],
+			[
+				"speedEnt",
+				"speedEntry"
+			],
+			[
+				"actual",
+				"actualDistance	(?)"
+			],
+			[
+				"st",
+				"stsp	(?)"
+			],
+			[
+				"survey",
+				"surveyDataCsvs	(?)"
+			],
+			[
+				"seat",
+				"seatConfigurationId"
+			],
+			[
+				"TWO",
+				"TWO_IN_AND_ONE_DRIVER_BACK_SEAT_CONFIGURATION	{}"
+			],
+			[
+				"proce",
+				"processTwoInAndOneDriverBack(surveyData)"
+			],
+			[
+				"inde",
+				"index	(num)"
+			],
+			[
+				"in",
+				"indecesOfGaps	[]"
+			],
+			[
+				"ind",
+				"index	(num)"
+			],
+			[
+				"mom",
+				"momentBeforeSdCsvTime	(?)"
+			],
+			[
+				"outputZipFile",
+				"outputZipFilename	(?)"
+			],
+			[
+				"sdcsv",
+				"sdCsvIndex	(num)"
+			],
+			[
+				"re",
+				"re	require"
+			],
+			[
+				"orign",
+				"originDestinations"
+			],
+			[
+				"parse",
+				"parseInt(string, radix?)"
+			],
+			[
+				"MIN",
+				"MIN_VALID_OD_TIME"
+			],
+			[
+				"par",
+				"parseInt(string, radix?)"
+			],
+			[
+				"orig",
+				"originDestination	{}"
+			],
+			[
+				"speedProf",
+				"speedProfileByTheHour"
+			],
+			[
+				"getAvera",
+				"getAverageSpeedPerOdPerHour(originDestinationsByTheHour, statsByTheHour)"
+			],
+			[
+				"speedPr",
+				"speedProfileByTheHour"
+			],
+			[
+				"originDesta",
+				"originDestinations	(?)"
+			],
+			[
+				"seatStat",
+				"seatStatusBefore"
+			],
+			[
+				"sur",
+				"surveyData	(?)"
+			],
+			[
+				"mo",
+				"mongoose	(?)"
+			],
+			[
+				"clean",
+				"cleanSurveyData"
+			],
+			[
+				"cleanSurvey",
+				"CleanSurveyDataController"
+			],
+			[
+				"routeSt",
+				"routeStops"
+			],
+			[
+				"popula",
+				"populateAreaStopOfRouteStops(routeStops)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/jason/Desktop/teams/views/reports/originDestinations/show.jade",
+			"settings":
+			{
+				"buffer_size": 2986,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jason/Desktop/teams/views/reports/vehicleOriginDestinations/show.jade",
+			"settings":
+			{
+				"buffer_size": 2857,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/jason/Desktop/teams/views/reports/hourlyStats/show.jade",
+			"settings":
+			{
+				"buffer_size": 3127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/home/jason/Desktop/teams/controllers/reports/HourlyStatsReportController.js",
+			"file_size": 5406,
+			"file_write_time": 1415766541000000,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 263.0,
+		"selected_items":
+		[
+			[
+				"make ",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"set syn javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"syn c",
+				"Set Syntax: C"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax c",
+				"Set Syntax: C"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"syntax jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"set",
+				"Set Syntax: Jade"
+			],
+			[
+				"jad",
+				"Set Syntax: Jade"
+			],
+			[
+				"install packa",
+				"Package Control: Install Package"
+			],
+			[
+				"installpac",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"list packa",
+				"Package Control: List Packages"
+			],
+			[
+				"installpack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"hint",
+				"JSHint"
+			],
+			[
+				"listpacka",
+				"Package Control: List Packages"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			]
+		],
+		"width": 570.0
+	},
+	"console":
+	{
+		"height": 141.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jason/Desktop/teams/controllers/reports/VehicleOdMatrixReportController.js",
+		"/home/jason/Desktop/teams/controllers/reports/OdMatrixReportController.js",
+		"/home/jason/Desktop/teams/views/reports/odMatrix/show.jade",
+		"/home/jason/Desktop/teams/models/OriginDestination.js",
+		"/home/jason/Desktop/teams/controllers/reports/OriginDestinationsReportController.js",
+		"/home/jason/Desktop/teams/views/reports/vehicleOdMatrix/show.jade",
+		"/home/jason/Desktop/teams/public/controllers/reports/originDestinations/showCtrl.js",
+		"/home/jason/Desktop/teams/services/data/vehicleSurveyData/VehicleSurveyDataService.js",
+		"/home/jason/Desktop/teams/services/data/vehicleSurveyData/VehicleOriginDestinationService.js",
+		"/home/jason/Desktop/teams/configs/url_mappings.js",
+		"/home/jason/Desktop/teams/controllers/reports/VehicleOriginDestinationsReportController.js",
+		"/home/jason/Desktop/teams/views/_includes/_mixins/ngFormMixins.jade",
+		"/home/jason/Desktop/teams/views/reports/originDestinations/show.jade",
+		"/home/jason/Desktop/teams/public/controllers/reports/vehicleOriginDestinations/showCtrl.js",
+		"/home/jason/Desktop/teams/services/data/surveyData/OriginDestinationService.js",
+		"/home/jason/Desktop/teams/views/_includes/navigation.jade",
+		"/home/jason/Desktop/teams/views/reports/vehicleOriginDestinations/show.jade",
+		"/home/jason/Desktop/teams/services/data/surveyData/SurveyDataService.js",
+		"/home/jason/Desktop/teams/models/VehicleOriginDestination.js",
+		"/home/jason/Desktop/teams/views/admin/reorderAreaStops/show.jade",
+		"/home/jason/Desktop/teams/models/Route.js",
+		"/home/jason/Desktop/teams/controllers/admin/ReorderAreaStopsController.js",
+		"/home/jason/Desktop/teams/views/data/areaStop/upload.jade",
+		"/home/jason/Desktop/teams/controllers/reports/AreaStopReportController.js",
+		"/home/jason/Desktop/teams/views/_includes/_mixins/formMixins.jade",
+		"/home/jason/Desktop/teams/controllers/admin/ReorderVehicleAreaStopsController.js",
+		"/home/jason/Desktop/teams/views/admin/reorderVehicleAreaStops/show.jade",
+		"/home/jason/Desktop/teams/views/_layouts/default.jade",
+		"/home/jason/Desktop/teams/views/data/surveyData/upload.jade",
+		"/home/jason/Desktop/teams/views/admin/reorderAreaStops/result.jade",
+		"/home/jason/Desktop/teams/public/controllers/reports/hourlyStats/showCtrl.js",
+		"/home/jason/Desktop/teams/views/reports/hourlyStats/show.jade",
+		"/home/jason/Desktop/teams/models/AreaStop.js",
+		"/home/jason/Desktop/teams/services/data/areaStop/AreaStopService.js",
+		"/home/jason/Desktop/teams/controllers/reports/HourlyStatsReportController.js",
+		"/home/jason/Desktop/teams/models/HourlyStat.js",
+		"/home/jason/Desktop/teams/services/data/surveyData/HourlyStatsService.js",
+		"/home/jason/Desktop/teams/controllers/manage/RouteController.js",
+		"/home/jason/Desktop/teams/configs/bootstrap.js",
+		"/home/jason/Desktop/teams/services/data/surveyData/SpeedService.js",
+		"/home/jason/Desktop/teams/models/HourlySpeed.js",
+		"/home/jason/Desktop/teams/models/SpeedRecord.js",
+		"/home/jason/Desktop/teams/controllers/data/SurveyDataController.js",
+		"/home/jason/Desktop/teams/views/_includes/header.jade",
+		"/home/jason/Desktop/teams/views/_includes/footer.jade",
+		"/home/jason/Desktop/teams/controllers/data/VehicleSurveyDataController.js",
+		"/home/jason/Desktop/teams/services/data/vehicleAreaStop/VehicleAreaStopService.js",
+		"/home/jason/Desktop/teams/services/data/vehicleRouteStop/VehicleRouteStopService.js",
+		"/home/jason/Desktop/teams/models/VehicleAreaStop.js",
+		"/home/jason/Desktop/teams/views/admin/reorderVehicleAreaStops/reorder.jade",
+		"/home/jason/Desktop/teams/views/reports/vehicleAreaStops/show.jade",
+		"/home/jason/Desktop/teams/controllers/reports/VehicleAreaStopReportController.js",
+		"/home/jason/Desktop/teams/configs/models.js",
+		"/home/jason/Desktop/teams/services/data/vehicleSurveyData/VehicleOriginDestinationToCsvService.js",
+		"/home/jason/Desktop/teams/public/controllers/data/routeStop/uploadCtrl.js",
+		"/home/jason/Desktop/teams/models/TricycleSurveyData.js",
+		"/home/jason/Desktop/teams/services/data/routeStop/RouteStopService.js",
+		"/home/jason/Desktop/teams/views/data/vehicleSurveyData/upload.jade",
+		"/home/jason/Desktop/teams/views/data/vehicleSurveyData/results.js",
+		"/home/jason/Desktop/teams/services/data/vehicleRouteStop/VehicleMapPointToRouteStopService.js",
+		"/home/jason/Desktop/teams/services/data/routeStop/MapPointToRouteStopService.js",
+		"/home/jason/Desktop/teams/controllers/data/VehicleRouteStopController.js",
+		"/home/jason/Desktop/teams/views/data/vehicleRouteStop/results.jade",
+		"/home/jason/Desktop/teams/public/controllers/data/vehicleRouteStop/resultsCtrl.js",
+		"/home/jason/Desktop/teams/views/data/vehicleRouteStop/upload.jade",
+		"/home/jason/Desktop/teams/models/Area.js",
+		"/home/jason/Desktop/teams/models/VehicleRouteStop.js",
+		"/home/jason/Desktop/teams/controllers/data/VehicleAreaStopController.js",
+		"/home/jason/Desktop/teams/views/data/vehicleAreaStop/results.jade",
+		"/home/jason/Desktop/teams/views/data/vehicleAreaStop/upload.jade",
+		"/home/jason/Desktop/teams/public/controllers/data/vehicleRouteStop/uploadCtrl.js",
+		"/home/jason/Desktop/teams/controllers/data/VehicleRouteStopController",
+		"/home/jason/Desktop/teams/models/VehicleTripStop.js",
+		"/home/jason/Desktop/teams/controllers/data/VehicleTripStopController.js",
+		"/home/jason/Desktop/teams/views/data/vehicleTripStop/upload.jade",
+		"/home/jason/Desktop/teams/controllers/data/AreaStopController.js",
+		"/home/jason/Desktop/teams/services/data/vehicleTripStop/VehicleTripStopService.js",
+		"/home/jason/Desktop/teams/services/data/VehicleStopPointsFromSurveyDataService.js",
+		"/home/jason/Desktop/teams/views/data/vehicleTripStop/results.jade",
+		"/home/jason/Desktop/teams/services/data/vehicleTripStop/VehicleTripStopsService.js",
+		"/home/jason/Desktop/teams/services/data/vehicleTrips/VehicleStopsService.js",
+		"/home/jason/Desktop/teams/models/VehicleTripStop",
+		"/home/jason/Desktop/teams/models/SpeedProfile.js",
+		"/home/jason/Desktop/teams/controllers/reports/VehicleTripMatrixReportController.js",
+		"/home/jason/Desktop/teams/views/admin/reorderAreaStops/reorder.jade",
+		"/home/jason/Desktop/teams/controllers/admin/DeleteDataController.js",
+		"/home/jason/Desktop/teams/views/admin/reorderAreaStops/main.jade",
+		"/home/jason/Desktop/teams/controllers/reports/ReorderAreaStopsController",
+		"/home/jason/Desktop/teams/controllers/reports/ReorderAreaStopsController.js",
+		"/home/jason/Desktop/teams/views/admin/delete/main.jade",
+		"/home/jason/Desktop/teams/views/reports/reorderAreaStops/main.jade",
+		"/home/jason/Desktop/teams/models/LatLng.js",
+		"/home/jason/Desktop/teams/controllers/data/CleanSurveyDataController.js",
+		"/home/jason/Desktop/teams/views/reports/areaStops/show.jade",
+		"/home/jason/Desktop/teams/configs/environment.js",
+		"/home/jason/Desktop/teams/configs/environment.js~",
+		"/home/jason/Desktop/teams/views/reports/areaStops/show.js",
+		"/home/jason/Desktop/teams/public/controllers/reports/odMatrix/showCtrl.js",
+		"/home/jason/Desktop/teams/public/controllers/reports/areaStops/showCtrl.js",
+		"/home/jason/Desktop/teams/views/data/cleanSurveyData/upload.jade",
+		"/home/jason/Desktop/teams/views/data/routeStop/upload.jade",
+		"/home/jason/Desktop/teams/models/RouteStop.js",
+		"/home/jason/Desktop/teams/controllers/data/RouteStopController.js",
+		"/home/jason/Desktop/teams/server.js",
+		"/home/jason/Desktop/teams/public/controllers/reports/showCtrl.js",
+		"/home/jason/Desktop/teams/views/reports/odMatrix/results.jade",
+		"/home/jason/Desktop/teams/controllers/reports/OdMatrixController.js",
+		"/home/jason/Desktop/teams/views/index.jade",
+		"/home/jason/Desktop/teams/configs/authorizations.js",
+		"/home/jason/Desktop/teams/controllers/AuthenticationController.js",
+		"/home/jason/Desktop/teams/views/login.jade",
+		"/home/jason/Desktop/teams/views/data/areaStop/results.jade",
+		"/home/jason/Desktop/teams/public/controllers/data/areaStop/resultsCtrl.js",
+		"/home/jason/Desktop/teams/public/controllers/data/surveyData/uploadCtrl.js",
+		"/home/jason/Desktop/teams/views/_layouts/layout_list.jade",
+		"/home/jason/Desktop/teams/views/manage/routes/list.jade",
+		"/home/jason/Desktop/teams/models/AreaStopCentroid.js",
+		"/home/jason/Desktop/teams/services/data/cleanSurveyData/CleanSurveyDataService.js",
+		"/home/jason/Desktop/teams/services/data/SurveyDataCleanerService.js",
+		"/home/jason/Desktop/teams/services/data/surveyData/BoardingAlightingService.js",
+		"/home/jason/Desktop/teams/models/BoardingAlighting.js",
+		"/home/jason/Desktop/teams/services/data/SensorToSeatParserService.js",
+		"/home/jason/Desktop/teams/services/data/BoardingAlightingPointsFromSurveyDataService.js",
+		"/home/jason/Desktop/teams/services/data/gpsTrace/GpsTraceService.js",
+		"/home/jason/Desktop/teams/controllers/test/data/RouteStopController.js",
+		"/home/jason/Desktop/teams/services/data/SurveyDataCsvToArrayService.js",
+		"/home/jason/Desktop/teams/services/data/surveyData/OriginDestinationToCsvService.js",
+		"/home/jason/Desktop/teams/services/data/surveyData/HourlyStatisticsService.js"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"outputZipFile",
+			"showBoardingOrAlighting",
+			"ShowBoardingOrAlighting",
+			"vrs",
+			"_createHourlyStats",
+			"allSpeedProfiles",
+			"allProcessedData",
+			"processFileDetail",
+			"sampleNumber",
+			"areaStops",
+			"$scope.boardingAlightings",
+			"convertRouteStopsToPoints",
+			"opts",
+			"tsd",
+			"hourlyStats",
+			"HourlyStats",
+			"hourlyStats",
+			"hourlyStatsReport",
+			"HourlyStatsReport",
+			"hourlyStatsReport",
+			"hourlySpeeds",
+			"average80thPercentileSpeed",
+			"average50thPercentileSpeed",
+			"totalCount",
+			"getPercentileSpeed",
+			"countBySpeed",
+			"percentileSpeed",
+			"PercentileSpeed",
+			"percentileSpeed",
+			"countBySpeed",
+			"speedProfilesByTheHour",
+			"getFiftiethPercentileSpeed",
+			"speedProfileOfTheHour",
+			"speedProfileByTheHour",
+			"arrayByTheHour",
+			"createArra",
+			"totalSurvey",
+			"processFileDetail",
+			"INDEX",
+			"index",
+			"sampleNumber",
+			"hourlySpeedsOfHour",
+			"hourlySpeeds",
+			"createArra",
+			"createArray",
+			"create",
+			"Moment",
+			"moment",
+			"Moment",
+			"moment",
+			"createVehicleOdMatrixFile",
+			"vehicleOdMatrix",
+			"createVehicleOdMatrix",
+			"createVehic",
+			"vehicleOriginDestinationsByTheHour",
+			"vehicleOriginDestinationCsvs",
+			"vehicleOriginDestinations",
+			"createArrayByTheHour()",
+			"vehicleOriginDestinations",
+			"VehicleOriginDestinations",
+			"vehicleOriginDestinations",
+			"vehicleAreaStopsToCreate",
+			"origindestinations",
+			"od",
+			"MapPointToRouteStopService",
+			"routeStopService",
+			"RouteStopService",
+			"routeStopService",
+			"RouteStops",
+			"transfor",
+			"RouteStops",
+			"RouteStop",
+			"mapPointToRouteStopService",
+			"MapPointToRouteStopService",
+			"routeStops",
+			"RouteStops",
+			"routeStops",
+			"newRouteStops",
+			"area.lat",
+			"routeStop",
+			"RouteStop",
+			"routeStop",
+			"RouteStop",
+			"routeStop",
+			"RouteStop",
+			"routeStop",
+			"RouteStop",
+			"areaStop",
+			"AreaStop",
+			"vehicleRouteStops",
+			"originDestinations",
+			"OriginDestinations",
+			"originDestinations",
+			"routeStops",
+			"boardingAlightingPointsFromSurveyDataService",
+			" =",
+			"boardingAlightingPointsFromSurveyDataService",
+			"getNameFromPath",
+			"var",
+			"ToUpdate",
+			"areaStopsToUpdate",
+			"vehicleAreaStopsToCreate",
+			"ToCreate",
+			"vehicleTripStopsToCreate",
+			"Trip",
+			"saveVehicleTripStops",
+			"Trip",
+			"vehicleTripStop",
+			"VehicleTripStop",
+			"vehicleTripStop",
+			"matchingVehicleTripStop",
+			"vts",
+			"hasMatching",
+			"RouteStop",
+			"areaStop",
+			"AreaStop",
+			"areaStop",
+			"AreaStop",
+			"areaStop",
+			"AreaStop",
+			"vehicleTrip",
+			"VehicleTrip",
+			"routeStopService",
+			"populateAreaStopsOfRoute",
+			"RouteStop",
+			"routeStop",
+			"RouteStop",
+			"routeStop"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/jason/Desktop/teams/views/reports/originDestinations/show.jade",
+					"settings":
+					{
+						"buffer_size": 2986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 55.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/jason/Desktop/teams/views/reports/vehicleOriginDestinations/show.jade",
+					"settings":
+					{
+						"buffer_size": 2857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 55.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/jason/Desktop/teams/views/reports/hourlyStats/show.jade",
+					"settings":
+					{
+						"buffer_size": 3127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/jason/Desktop/teams/controllers/reports/HourlyStatsReportController.js",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.ArduinoSketch":
+	{
+		"height": 114.0
+	},
+	"output.exec":
+	{
+		"height": 233.0
+	},
+	"output.stino_log":
+	{
+		"height": 114.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"hourl",
+				"controllers/reports/HourlyStatsReportController.js"
+			],
+			[
+				"origindes",
+				"models/OriginDestination.js"
+			],
+			[
+				"show",
+				"views/reports/originDestinations/show.jade"
+			],
+			[
+				"ngfor",
+				"views/_includes/_mixins/ngFormMixins.jade"
+			],
+			[
+				"vehicleodmatr",
+				"controllers/reports/VehicleOdMatrixReportController.js"
+			],
+			[
+				"vehicleodm",
+				"controllers/reports/VehicleOdMatrixReportController.js"
+			],
+			[
+				"odmatr",
+				"controllers/reports/OdMatrixReportController.js"
+			],
+			[
+				"origindestinationsrepo",
+				"controllers/reports/OriginDestinationsReportController.js"
+			],
+			[
+				"origindestinationser",
+				"services/data/surveyData/OriginDestinationService.js"
+			],
+			[
+				"vehicleorigindestinationcontroll",
+				"controllers/reports/VehicleOriginDestinationsReportController.js"
+			],
+			[
+				"vehicleorigindestinationcontroller",
+				"controllers/reports/VehicleOriginDestinationsReportController.js"
+			],
+			[
+				"url",
+				"configs/url_mappings.js"
+			],
+			[
+				"navig",
+				"views/_includes/navigation.jade"
+			],
+			[
+				"vehicleorigindestinationser",
+				"services/data/vehicleSurveyData/VehicleOriginDestinationService.js"
+			],
+			[
+				"vehiclesurveydataser",
+				"services/data/vehicleSurveyData/VehicleSurveyDataService.js"
+			],
+			[
+				"origin",
+				"models/OriginDestination.js"
+			],
+			[
+				"vehicleorigin",
+				"models/VehicleOriginDestination.js"
+			],
+			[
+				"surveydataser",
+				"services/data/surveyData/SurveyDataService.js"
+			],
+			[
+				"vehicleorigindestinationcon",
+				"controllers/reports/VehicleOriginDestinationsReportController.js"
+			],
+			[
+				"origindestinationserv",
+				"services/data/surveyData/OriginDestinationService.js"
+			],
+			[
+				"route",
+				"models/Route.js"
+			],
+			[
+				"vehicleorigindes",
+				"services/data/vehicleSurveyData/VehicleOriginDestinationService.js"
+			],
+			[
+				"navi",
+				"views/_includes/navigation.jade"
+			],
+			[
+				"naviga",
+				"views/_includes/navigation.jade"
+			],
+			[
+				"formmi",
+				"views/_includes/_mixins/formMixins.jade"
+			],
+			[
+				"defa",
+				"views/_layouts/default.jade"
+			],
+			[
+				"reorder",
+				"controllers/admin/ReorderAreaStopsController.js"
+			],
+			[
+				"formmix",
+				"views/_includes/_mixins/formMixins.jade"
+			],
+			[
+				"nav",
+				"views/_includes/navigation.jade"
+			],
+			[
+				"areastop",
+				"models/AreaStop.js"
+			],
+			[
+				"orig",
+				"models/OriginDestination.js"
+			],
+			[
+				"origindestinati",
+				"models/OriginDestination.js"
+			],
+			[
+				"show.jade",
+				"views/reports/originDestinations/show.jade"
+			],
+			[
+				"origindestinationservice",
+				"services/data/surveyData/OriginDestinationService.js"
+			],
+			[
+				"areastopser",
+				"services/data/areaStop/AreaStopService.js"
+			],
+			[
+				"hourlystat",
+				"controllers/reports/HourlyStatsReportController.js"
+			],
+			[
+				"origindestinationsreportcon",
+				"controllers/reports/OriginDestinationsReportController.js"
+			],
+			[
+				"hourlystatser",
+				"services/data/surveyData/HourlyStatsService.js"
+			],
+			[
+				"origindest",
+				"services/data/surveyData/OriginDestinationService.js"
+			],
+			[
+				"hourly",
+				"models/HourlyStat.js"
+			],
+			[
+				"hou",
+				"models/HourlyStat.js"
+			],
+			[
+				"hourlystatsser",
+				"services/data/surveyData/HourlyStatsService.js"
+			],
+			[
+				"hourlystats",
+				"models/HourlyStat.js"
+			],
+			[
+				"boot",
+				"configs/bootstrap.js"
+			],
+			[
+				"ngform",
+				"views/_includes/_mixins/ngFormMixins.jade"
+			],
+			[
+				"routecon",
+				"controllers/manage/RouteController.js"
+			],
+			[
+				"hourlyspee",
+				"models/HourlySpeed.js"
+			],
+			[
+				"speedre",
+				"models/SpeedRecord.js"
+			],
+			[
+				"footer",
+				"views/_includes/footer.jade"
+			],
+			[
+				"header",
+				"views/_includes/header.jade"
+			],
+			[
+				"speedser",
+				"services/data/surveyData/SpeedService.js"
+			],
+			[
+				"boots",
+				"configs/bootstrap.js"
+			],
+			[
+				"vehiclesurve",
+				"services/data/vehicleSurveyData/VehicleSurveyDataService.js"
+			],
+			[
+				"vehiclesurvey",
+				"controllers/data/VehicleSurveyDataController.js"
+			],
+			[
+				"vehicleorigni",
+				"models/VehicleOriginDestination.js"
+			],
+			[
+				"vehicleoro",
+				"models/VehicleOriginDestination.js"
+			],
+			[
+				"vehicleorigindestination",
+				"models/VehicleOriginDestination.js"
+			],
+			[
+				"surveydata",
+				"controllers/data/SurveyDataController.js"
+			],
+			[
+				"vehicleroutestop",
+				"services/data/vehicleRouteStop/VehicleRouteStopService.js"
+			],
+			[
+				"vehicleareast",
+				"models/VehicleAreaStop.js"
+			],
+			[
+				"vehicleareastopser",
+				"services/data/vehicleAreaStop/VehicleAreaStopService.js"
+			],
+			[
+				"bootst",
+				"configs/bootstrap.js"
+			],
+			[
+				"model",
+				"configs/models.js"
+			],
+			[
+				"uploadctr",
+				"client_controllers/data/routeStop/uploadCtrl.js"
+			],
+			[
+				"tricyc",
+				"models/TricycleSurveyData.js"
+			],
+			[
+				"vehiclemap",
+				"services/data/vehicleRouteStop/VehicleMapPointToRouteStopService.js"
+			],
+			[
+				"vehicleroutestopcontr",
+				"controllers/data/VehicleRouteStopController.js"
+			],
+			[
+				"routestopser",
+				"services/data/routeStop/RouteStopService.js"
+			],
+			[
+				"vehicleroutestopser",
+				"services/data/vehicleRouteStop/VehicleRouteStopService.js"
+			],
+			[
+				"vehiclerouteserve",
+				"services/data/vehicleRouteStop/VehicleRouteStopService.js"
+			],
+			[
+				"models",
+				"configs/models.js"
+			],
+			[
+				"vehicleroutesto",
+				"models/VehicleRouteStop.js"
+			],
+			[
+				"area",
+				"models/Area.js"
+			],
+			[
+				"vehicle",
+				"services/data/VehicleStopPointsFromSurveyDataService.js"
+			],
+			[
+				"vehicletrip",
+				"services/data/vehicleTripStop/VehicleTripStopService.js"
+			],
+			[
+				"upload",
+				"views/data/areaStop/upload.jade"
+			],
+			[
+				"areastopcont",
+				"controllers/data/AreaStopController.js"
+			],
+			[
+				"results",
+				"views/data/vehicleTripStop/results.jade"
+			],
+			[
+				"ur",
+				"configs/url_mappings.js"
+			],
+			[
+				"surveydata.js",
+				"models/TricycleSurveyData.js"
+			],
+			[
+				"spee",
+				"models/SpeedProfile.js"
+			],
+			[
+				"speed",
+				"models/SpeedProfile.js"
+			],
+			[
+				"survey",
+				"controllers/data/SurveyDataController.js"
+			],
+			[
+				"dele",
+				"controllers/admin/DeleteDataController.js"
+			],
+			[
+				"latlng",
+				"models/LatLng.js"
+			],
+			[
+				"envi",
+				"configs/environment.js~"
+			],
+			[
+				"areast",
+				"controllers/reports/AreaStopReportController.js"
+			],
+			[
+				"showctr",
+				"client_controllers/reports/odMatrix/showCtrl.js"
+			],
+			[
+				"url_mapp",
+				"configs/url_mappings.js"
+			],
+			[
+				"showc",
+				"client_controllers/reports/odMatrix/showCtrl.js"
+			],
+			[
+				"ng",
+				"views/_includes/_mixins/ngFormMixins.jade"
+			],
+			[
+				"surve",
+				"controllers/data/SurveyDataController.js"
+			],
+			[
+				"routestop",
+				"models/RouteStop.js"
+			],
+			[
+				"map",
+				"services/data/routeStop/MapPointToRouteStopService.js"
+			],
+			[
+				"routestopserv",
+				"services/data/routeStop/RouteStopService.js"
+			],
+			[
+				"origind",
+				"services/data/surveyData/OriginDestinationService.js"
+			],
+			[
+				"routestopcon",
+				"controllers/data/RouteStopController.js"
+			],
+			[
+				"mappo",
+				"services/data/routeStop/MapPointToRouteStopService.js"
+			],
+			[
+				"en",
+				"configs/environment.js"
+			],
+			[
+				"server",
+				"server/server.js"
+			],
+			[
+				"routest",
+				"models/RouteStop.js"
+			],
+			[
+				"envir",
+				"configs/environment.js"
+			],
+			[
+				"auth",
+				"controllers/AuthenticationController.js"
+			],
+			[
+				"author",
+				"configs/authorizations.js"
+			],
+			[
+				"log",
+				"views/login.jade"
+			],
+			[
+				"login",
+				"views/login.jade"
+			],
+			[
+				"serve",
+				"server/server.js"
+			],
+			[
+				"authen",
+				"controllers/AuthenticationController.js"
+			],
+			[
+				"index",
+				"views/index.jade"
+			],
+			[
+				"navigation",
+				"views/_includes/navigation.jade"
+			],
+			[
+				"surveydataservice",
+				"services/data/surveyData/SurveyDataService.js"
+			],
+			[
+				"resultctr",
+				"client_controllers/data/areaStop/resultsCtrl.js"
+			],
+			[
+				"result",
+				"views/data/areaStop/results.jade"
+			],
+			[
+				"surveydataserv",
+				"services/data/surveyData/SurveyDataService.js"
+			],
+			[
+				"hourlystatserv",
+				"services/data/surveyData/HourlyStatsService.js"
+			],
+			[
+				"defau",
+				"views/_layouts/default.jade"
+			],
+			[
+				"default",
+				"views/_layouts/default.jade"
+			],
+			[
+				"survet",
+				"controllers/data/SurveyDataController.js"
+			],
+			[
+				"resultsctr",
+				"client_controllers/data/areaStop/resultsCtrl.js"
+			],
+			[
+				"hourlystatre",
+				"controllers/reports/HourlyStatsReportController.js"
+			],
+			[
+				"uploadctrl",
+				"client_controllers/data/surveyData/uploadCtrl.js"
+			],
+			[
+				"showct",
+				"client_controllers/reports/hourlyStats/showCtrl.js"
+			],
+			[
+				"list",
+				"views/_layouts/layout_list.jade"
+			],
+			[
+				"areastopcontroller",
+				"controllers/data/AreaStopController.js"
+			],
+			[
+				"mapp",
+				"configs/url_mappings.js"
+			],
+			[
+				"areastopcon",
+				"controllers/data/AreaStopController.js"
+			],
+			[
+				"environ",
+				"configs/environment.js"
+			],
+			[
+				"houly",
+				"services/data/surveyData/HourlyStatsService.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 275.0,
+	"status_bar_visible": true
+}

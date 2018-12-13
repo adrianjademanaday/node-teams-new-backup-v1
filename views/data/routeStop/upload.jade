@@ -1,0 +1,62 @@
+extends ../../_layouts/forms/form
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+prepend assignments
+	-mainLink = 'DATA'
+	-subLink = 'ROUTE_STOPS'
+	-postUrl = '/data/routeStop/upload'
+	-pageTitle = 'Upload Route Stops'
+	-ctrl = 'uploadCtrl'
+
+
+block content
+	h1 #{pageTitle}
+		a(id='help', class='help', title='show tips',href='#help') Help?
+	hr
+
+	.row
+		.col-md-6
+			form.form-horizontal(method='POST', action=postUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						+ngSelectNgChange('areaId', 'Area', areas, areaId, 'area', 'loadRoutes()')
+						+ngSelect('routeId', 'Route', routeId, 'route', 'routes')
+						+file('surveyData', 'Survey Data')
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Upload')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+		.help_box
+			h4
+				b Passenger Route Stop Processing
+				a(id='close', class='close') x
+			|1. Select the area of the uploaded file.
+			br
+			|2. Select the route of the uploaded file.
+			br
+			|3. Then choose the zip file and click upload.
+			br
+			b Located at: 
+			font(color='darkblue') teams/data/downloads/(name-of-zip-file)-output.zip
+			hr
+			h5 Looks like:
+			img(class='help_img',src='/resources/images/data/3.jpg')
+			br
+			hr
+			h5
+				b Note:
+			i This is the fourth process. This process will create a routestop table on the database and stored the collected data of the uploaded file.
+			i The collected data that was stored on the database will be the references of the next or other processes.
+			br
+			br
+
+block scriptIncludes
+	script(type='text/javascript', src='/controllers/data/routeStop/uploadCtrl.js')

@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/jason/Desktop/teams",
+
+			"folder_exclude_patterns": ["controllers", "models", "enums", "services", "public/resources", "test", "utils", "views"]
+		}
+	]
+}

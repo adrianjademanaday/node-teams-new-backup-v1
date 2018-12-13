@@ -1,0 +1,26 @@
+extends ../default
+
+block content
+	h1 #{pageTitle}
+
+	.row
+		.col-md-12			
+			if multipart
+				form.form-horizontal(method=method, action=action, enctype='multipart/form-data')
+					+formContent
+			else
+				form.form-horizontal(method=method, action=action)
+					+formContent
+
+mixin formContent
+	.row
+		.col-md-6			
+			block firstColumnControls
+
+		.col-md-6(syle='border-left-width: 5px')			
+			block secondColumnControls
+
+	.row
+		.col-md-6.col-md-offset-6
+			hr
+			+formActions('manage/routes')

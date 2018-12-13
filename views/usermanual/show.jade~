@@ -1,0 +1,7 @@
+extends ../_layouts/default
+
+block assignments
+	-mainLink = 'HOME'
+	-subLink = 'USERMANUAL'
+	
+block content

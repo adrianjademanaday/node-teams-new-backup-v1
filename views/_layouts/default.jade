@@ -1,0 +1,44 @@
+doctype html
+html(ng-app='app')
+	head
+		block assignments
+
+		title #{pageTitle}
+
+		link(rel='stylesheet', href='/resources/css/bootstrap.min.css')
+		
+		block styleIncludes
+
+	body(ng-controller=ctrl)
+		.cover
+		.container
+			include ../_includes/header
+
+			include ../_includes/navigation
+
+			block content	
+
+			include ../_includes/footer
+		.deleteSurveyDataOnly
+			h4(align='center')
+				| b This process will delete Survey Data.
+			h4(align='center') Click 'Delete' to continue
+			.deleteButton
+				a(href='/admin/delete/surveyDataOnly', class='deleteA') Delete
+				a(href='', id='closeSurveyDataOnly') Cancel
+		.deleteAll
+			h4(align='center')
+				| b This process will delete both Survey data uploaded and data from the database.
+			h4(align='center') Click 'Delete' to continue
+			.deleteButton
+				a(href='/admin/delete/all', class='deleteA') Delete
+				a(href='', id='closeDeleteAll') Cancel
+		
+		script(type='text/javascript', src='/resources/js/jquery.min.js')
+		script(type='text/javascript', src='/resources/js/angular.min.js')
+		script(type='text/javascript', src='/resources/js/angular-route.min.js')
+		script(type='text/javascript', src='/resources/js/bootstrap.min.js')
+		script(type='text/javascript', src='/resources/js/click_event.js')
+		script(type='text/javascript', src='/app.js')		
+
+		block scriptIncludes

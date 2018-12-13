@@ -1,0 +1,34 @@
+extends ../../_layouts/forms/form
+
+include ../../_includes/_mixins/formMixins
+
+block assignments
+	-mainLink = 'ADMIN'
+	-subLink = 'REORDER_VEHICLE_AREA_STOPS'
+	-pageTitle = 'Reorder Vehicle Area Stops'
+	-cancelUrl = '/home'	
+	-uploadUrl = '/admin/reorderVehicleAreaStops/reorder'
+
+block content
+	h1 #{pageTitle}
+	hr
+
+	.row
+		.col-md-6
+			h2 #{message}
+			br
+
+			form.form-horizontal(method='POST', action=uploadUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						+select('areaId', 'Area', areas, areaId)
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label #{label}	
+							.col-md-10.well
+								+submitButton('Reorder')
+								+resetButton()
+								+urlButton('Cancel', cancelUrl)

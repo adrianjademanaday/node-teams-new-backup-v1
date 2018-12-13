@@ -1,0 +1,40 @@
+extends ../../../_layouts/forms/form
+
+include ../../../_includes/_mixins/ngFormMixins
+include ../../../_includes/_mixins/formMixins
+
+prepend assignments
+	-mainLink = 'TEST'
+	-subMenu = 'DATA'
+	-subMenuLink = 'AREA_STOPS'
+	-postUrl = '/test/data/areaStop/upload'
+	-pageTitle = 'Upload Area Stops'
+
+
+block content
+	h1 #{pageTitle}
+	hr
+
+	.row
+		.col-md-6			
+			form.form-horizontal(method='POST', action=postUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12						
+						+select('areaId', 'Area', areas, areaId)
+						+text('topLeftBoundsLat', 'Top Left Lat', topLeftBoundsLat)
+						+text('topLeftBoundsLng', 'Top Left Lng', topLeftBoundsLng)
+						+text('bottomRightBoundsLat', 'Bottom Right Lat', bottomRightBoundsLat)
+						+text('bottomRightBoundsLng', 'Bottom Right Lng', bottomRightBoundsLng)
+						+text('numberOfPoints', 'Points', numberOfPoints)
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Upload')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+
+block scriptIncludes

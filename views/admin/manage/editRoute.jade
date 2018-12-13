@@ -1,0 +1,72 @@
+extends ../../_layouts/default
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+block assignments
+	-mainLink = 'ADMIN'
+	-subLink = 'MANAGE_AREA'
+	-pageTitle = 'Update Route'
+	-postUrl = '/admin/manage/editRoute'
+	-cancelUrl = '/admin/manage/main'
+	-baseUrl = cancelUrl
+	-ctrl = 'uploadCtrl'
+	
+block content
+	h1 Update Route
+	hr
+	.row
+		.col-md-6
+			form.form-horizontal(method='POST', action=postUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						table(class='addRoute')
+							tr
+								td(class='tdRoute')
+									a Select Area
+								td
+									select(name='areaId', class='routelength')
+										each area in areasFirst
+											option(value='#{area._id}') #{area.name}
+										each area in areasSecond
+											option(value='#{area._id}') #{area.name}
+							tr
+								td(class='tdRoute')
+									a Route Name
+								td
+									each route in routes
+										input(type='hidden', name='routeId', value='#{route._id}')
+										input(type='hidden', name='curAreaId', value='#{route.areaId}')
+										input(type='text', name='nameOfRoute', value='#{route.name}',class='routelength')
+							tr
+								td(class='tdRoute')
+									a Seat Config.
+								td
+									select(name='setConfig', class='routelength')
+										each route in routes
+											option(value='#{route.seatConfiguration.id}') #{route.seatConfiguration.name}
+										option(value='0') Two In and One Driver Back
+										option(value='1') Three In and Two Driver Back
+										option(value='2') Two Front and Four Back
+							tr
+								td(class='tdRoute')
+									a Map Center Lat.
+								td
+									each route in routes
+										input(type='text', name='mapCenterLat', value='#{route.mapCenter.lat}', class='routelength')
+							tr
+								td(class='tdRoute')
+									a Map Center lng.
+								td
+									each route in routes
+										input(type='text', name='mapCenterLng', value='#{route.mapCenter.lng}', class='routelength')
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Update')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)

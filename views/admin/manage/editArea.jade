@@ -1,0 +1,60 @@
+extends ../../_layouts/default
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+block assignments
+	-mainLink = 'ADMIN'
+	-subLink = 'MANAGE_AREA'
+	-pageTitle = 'Update Area'
+	-cancelUrl = '/admin/manage/main'
+	-baseUrl = cancelUrl
+	-uploadUrl = '/admin/manage/editArea'
+	-ctrl = 'uploadCtrl'
+	
+block content
+	h1 Update Area
+	hr
+	.row
+		.col-md-6
+			form.form-horizontal(method='POST', action=uploadUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						table(class='addRoute')
+							each area in areas
+								input(type='hidden', name='areaId', value='#{area._id}')
+								tr
+									td(class='tdRoute')
+										a Name of Area
+									td
+										input(type='text', name='nameOfArea', value='#{area.name}',class='routelength')
+								tr
+									td(class='tdRoute')
+										a Top Left Lat
+									td
+										input(type='text', name='topLeftLat', value='#{area.topLeftBounds.lat}', class='routelength')
+								tr
+									td(class='tdRoute')
+										a Top Left Lng
+									td
+										input(type='text', name='topLeftLng', value='#{area.topLeftBounds.lng}', class='routelength')
+								tr
+									td(class='tdRoute')
+										a Bottom Right Lat
+									td
+										input(type='text', name='bottomRightLat', value='#{area.bottomRightBounds.lat}', class='routelength')
+								tr
+									td(class='tdRoute')
+										a Bottom Right Lng
+									td
+										input(type='text', name='bottomRightLng', value='#{area.bottomRightBounds.lng}', class='routelength')
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Update')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)

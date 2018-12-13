@@ -1,0 +1,45 @@
+extends ../../../_layouts/forms/form
+
+include ../../../_includes/_mixins/formMixins
+include ../../../_includes/_mixins/ngFormMixins
+
+prepend assignments
+	-mainLink = 'TEST'
+	-subMenu = 'DATA'
+	-subMenuLink = 'SURVEY_DATA'
+	-cancelUrl = '/home'
+	-baseUrl = cancelUrl
+	-uploadUrl = '/test/data/surveyData/upload'
+	-pageTitle = 'Upload Survey Data'
+	-ctrl = 'uploadCtrl'
+
+block content
+	h1 #{pageTitle}
+	hr
+
+	.row
+		.col-md-6			
+			form.form-horizontal(method='POST', action=uploadUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						+ngSelectNgChange('areaId', 'Area', areas, areaId, 'area', 'loadRoutes()')
+						+ngSelect('routeId', 'Route', routeId, 'route', 'routes')
+						+text('topLeftBoundsLat', 'Top Left Lat', topLeftBoundsLat)
+						+text('topLeftBoundsLng', 'Top Left Lng', topLeftBoundsLng)
+						+text('bottomRightBoundsLat', 'Bottom Right Lat', bottomRightBoundsLat)
+						+text('bottomRightBoundsLng', 'Bottom Right Lng', bottomRightBoundsLng)
+						+text('outputZipFilename', 'Output Zip File', outputZipFilename)
+						+text('numberOfPoints', 'Points', numberOfPoints)
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label #{label}		
+							.col-md-10.well
+								+submitButton('Upload')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+
+block scriptIncludes
+	script(type='text/javascript', src='/controllers/data/surveyData/uploadCtrl.js')

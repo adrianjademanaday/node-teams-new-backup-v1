@@ -1,0 +1,38 @@
+extends default
+
+block assignments	
+
+block content
+	h1 #{pageTitle}
+	hr
+
+	.row
+		.col-md-12
+			.well.pull-right
+				+urlButton('Add', (baseUrl + '/create'), 'primary')
+				button.btn.btn-default(id='filterButton', ng-click='toggleFilter()') {{filterButtonText}}
+
+	.row
+		.col-md-12
+			form(method='GET', action=baseUrl)
+				table.table.table-bordered
+					thead						
+						tr
+							block columns
+							th.col-md-1.text-center Update
+							th.col-md-1.text-center Remove						
+						tr.alert.alert-info(ng-show='isShowFilter')
+							block filters
+							th.col-md-1 
+								button.btn.btn-primary.form-control(type='submit') Filter
+							th.col-md-1
+								button.btn.btn-default.form-control Reset						
+					tbody
+						// Rows
+						for e in entities
+							tr
+								block rows
+								td.text-center 
+									a(href='/manage/routes/edit/' + e.id) Update
+								td.text-center 
+									a(href='/manage/routes/remove/' + e.id) Remove

@@ -1,0 +1,36 @@
+extends ../../_layouts/forms/form
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+prepend assignments
+	-mainLink = 'REPORTS'
+	-subLink = 'VEHICLE_AREA_STOPS'
+	-baseUrl = '/'
+	-postUrl = '/reports/vehicleAreaStops/fetch'
+	-pageTitle = 'Download Area Stops'
+
+
+block content
+	h1 #{pageTitle}
+	hr
+
+	.row
+		.col-md-6			
+			form.form-horizontal(method='POST', action=postUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12						
+						+select('areaId', 'Area', areas, areaId, 'area')
+						+text('outputFilename', 'Output Filename', outputFilename)
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Download')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+
+block scriptIncludes

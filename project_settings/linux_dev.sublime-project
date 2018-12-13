@@ -1,0 +1,56 @@
+{	
+	"folders":
+	[
+
+		{
+			"path": "/home/jason/Desktop/teams/models"
+		},
+
+		{
+			"path": "/home/jason/Desktop/teams/enums"
+		},
+
+		{
+			"path": "/home/jason/Desktop/teams/controllers"
+		},
+
+		{
+			"path": "/home/jason/Desktop/teams/services"
+		},
+
+		{
+			"path": "/home/jason/Desktop/teams/utils"
+		},		
+
+		{
+			"name": "client_controllers",
+
+			"path": "/home/jason/Desktop/teams/public/controllers"
+		},
+
+		{
+			"path": "/home/jason/Desktop/teams/views"
+		},		
+
+		{
+			"path": "/home/jason/Desktop/teams/configs",
+
+			"folder_exclude_patterns": ["middlewares"]
+		},
+
+		{
+			"path": "/home/jason/Desktop/teams/test"
+		},
+
+		{
+			"name": "server",	
+
+			"path": "/home/jason/Desktop/teams",
+
+			"folder_exclude_patterns": ["*"],
+
+			"file_exclude_patterns": [".project", "README.md", "package.json"]
+		}
+
+	]
+}

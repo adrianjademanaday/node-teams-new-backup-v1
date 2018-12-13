@@ -1,0 +1,13 @@
+extends ../../_layouts/forms/form
+
+include ../../_includes/_mixins/formMixins
+
+prepend assignments
+	-mainLink = 'MANAGE'
+	-subLink = 'ROUTES'
+	-baseUrl = '/manage/routes'	
+
+block formControls
+	+hidden('id', route.id)
+	+text('name', 'Name', route.name)
+	+text('longName', 'Long Name', route.longName)

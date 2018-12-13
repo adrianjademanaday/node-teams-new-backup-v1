@@ -1,0 +1,510 @@
+extends ../_layouts/default
+
+block assignments
+	-mainLink = 'HOME'
+	-subLink = 'USERMANUAL'
+	-pageTitle = 'User Manual'
+	
+block content
+	a(href='#introduction') Introduction &nbsp|&nbsp 
+	a(href='#partslist') Parts List &nbsp|&nbsp 
+	a(href='#partsoftheteamsdevice') Parts of the TEAMS Device &nbsp|&nbsp 
+	a(href='#preperation') Preperation &nbsp|&nbsp  
+	a(href='#installation') Installation &nbsp|&nbsp 
+	a(href='#devicechecking') Device Checking &nbsp|&nbsp 
+	a(href='#tricyclemodel') Trycicle Model &nbsp|&nbsp 
+	a(href='#installationsetup') Installation Setup &nbsp|&nbsp 
+	a(href='#uninstallation') Uninstallation &nbsp|&nbsp
+	a(href='#softwareprocessing') Software Processing 
+	a(href='#cleansurveydata') Clean Survey Data &nbsp|&nbsp 
+	a(href='#origindestination') Origin Destination Processing &nbsp|&nbsp 
+	a(href='#passareastop') Area Stop Processing &nbsp|&nbsp 
+	a(href='#passroutestop') Route Stop Processing &nbsp|&nbsp 
+	a(href='#boardingalighting') Boarding Alighting Processing &nbsp|&nbsp 
+	a(href='#speedprofile') Speed Profile Processing &nbsp|&nbsp 
+	a(href='#hourlystat') Hourly Stats Processing &nbsp|&nbsp 
+	a(href='#hourlystatmap') Hourly Stats Map Processing &nbsp|&nbsp 
+	a(href='#hpbaamp') Hourly Passenger Boarding and Alighting Map Processing &nbsp|&nbsp 
+	a(href='#hvodmp') Hourly Vehicle Origin Destination Map Processing &nbsp|&nbsp 
+	div(align='center')
+		h1 
+			b
+				|USER MANUAL
+		h2 
+			i 
+				|Tricycle Efficiency Analysis and Management System
+		h2
+			| (TEAMS)
+		hr
+		
+	h3
+		b
+			a(name='introduction')
+				font(color='black') Introduction
+		
+	p(align='justify')
+		
+		|The TEAMS device is a tricycle passenger counter. It logs where a passenger boards and alights based on GPS readings. It also continuously logs the GPS trace of the tricycle so that its route can be mapped. The device is powered by a lithium polymer rechargeable battery that can last up to eight hours of use when fully charged. The device along with its sensors and GPS antenna is installed in the tricycle. Data then is collected by extracting the log file from the SD card of the device. The data is then uploaded to a computer that processes the data where it produces reports boarding – alighting, origin – destination data and speed and distance profile of the tricycle in CSV format.
+	hr
+	
+	table(width='100%', border='1')
+		th 
+			h3
+				b 
+					a(name='partslist')
+						font(color='black') &nbsp&nbsp&nbspParts List 
+		th
+			h3
+				b
+					a(name='partsoftheteamsdevice') 
+						font(color='black') &nbsp&nbsp&nbspParts of the TEAMS Device
+		tr
+			td  
+				br
+				|&nbsp&nbsp&nbspThe TEAMS Device consists of the following.
+				br
+				br
+				|&nbsp&nbsp&nbsp1). &nbspTEAMS Device
+				br
+				br
+				|&nbsp&nbsp&nbsp2). &nbspUSB Cord
+				br
+				br
+				|&nbsp&nbsp&nbsp3). &nbsp8 GB SD Card
+				br
+				br
+				|&nbsp&nbsp&nbsp4). &nbsp10,000 mAh Power Bank
+				br
+				br
+				|&nbsp&nbsp&nbsp5). &nbsp1 piece 12v adaptor
+				br
+				br
+				|&nbsp&nbsp&nbsp6). &nbsp4 pieces 2 meter wires
+				br
+				br
+				|&nbsp&nbsp&nbsp7). &nbsp2 pieces 4 meter wires
+				br
+				br
+				|&nbsp&nbsp&nbsp8). &nbsp3 pieces 10 cm thick sensors
+				br
+				br
+				|&nbsp&nbsp&nbsp9). &nbsp3 pieces 30 cm thick sensors
+				br
+				br
+				|&nbsp&nbsp&nbsp10). &nbsp1 piece LED device tester
+				br
+				br
+				|&nbsp&nbsp&nbsp11). &nbsp15 pieces magnetic cable clips
+			td
+				.scroller
+					br
+					ul
+						li
+							b Power Bank 10,000 mAh 
+							br
+							i - Powers the devices.
+							br
+							img(src='/resources/images/1.jpg', height='160', width='250')
+							br
+							br
+						li
+							b Power Bank USB Charger
+							br
+							i - Connects the battery for charging.
+							br
+							img(src='/resources/images/2.jpg', height='160', width='250')
+							br
+							br
+						li
+							b USB cord
+							br
+							i - Connects the battery to power the device.
+							br
+							img(src='/resources/images/3.jpg', height='160', width='250')
+							br
+							br
+						li
+							b GPS Antena
+							br
+							i - Finds signal form the satelite.
+							br
+							img(src='/resources/images/4.png', height='160', width='250')
+							br
+							br
+						li
+							b SD Card
+							br
+							i - Stores Data.
+							br
+							img(src='/resources/images/5.jpg', height='160', width='250')
+							br
+							br
+						li
+							b Led Tester Device
+							br
+							i - Test the functionality of the device.
+							br
+							img(src='/resources/images/6.jpg', height='160', width='250')
+							br
+							br
+						li
+							b 30 cm thick sensor
+							br
+							i - Detects passengers behind the driver.
+							br
+							img(src='/resources/images/7.jpg', height='160', width='250')
+							br
+							br
+						li
+							b 10 cm thick sensor
+							br
+							i - Detects passengers inside the sidecar.
+							br
+							img(src='/resources/images/8.jpg', height='160', width='250')
+							br
+							br
+						li
+							b TEAMS Device
+							br
+							i - Receives data from sensor and GPS.
+							br
+							img(src='/resources/images/9.jpg', height='160', width='250')
+							br
+							br
+	hr
+	
+	h3
+		b
+			a(name='preperation')
+				font(color='black') Preperation
+	|These materials are needed during installation of the device in the tricycle.
+	br
+	br
+	|1. Cloth Type Duct Tape – a cloth type is better because it can be cut without a scissor thereby speeding deployment.
+	br
+	br
+	|2. Plastic container for the device
+	br
+	br
+	|3. Scissors (Optional)
+	
+	hr
+	
+	h3
+		b
+			a(name='installation')
+				font(color='black') Installation
+	|1. The sensors can detect a maximum of 10 cm so their placement is key to having reliable data.
+	br
+	br
+	|2. Place the device on the front compartment inside the tricycle where the driver usually puts his coin box/ water bottle, face towel etc. It is recommended that you choose a tricycle that has a compartment spacious enough for the device and its battery to sit flat for stability.
+	br
+	br
+	|3. Place the sensor labelled One (1) into the lower left wall of the inner seat when facing the front of it from the outside. Each sensor will have a magnet so that it can be easily placed inside the tricycle. If the inside of the tricycle is not made of steel use a duct tape instead to stick the sensor. (As shown in Fig. 2)
+	br
+	br
+	|4. Place the sensor labelled Two (2) into the upper middle part of the inner seat.
+	br
+	br
+	|5. Place the sensor labelled Three (3) into the lower right wall of the inner seat.
+	br
+	br
+	|6. Place the sensor labelled Four (4) into the front wall near the seat beside the tricycle driver.
+	br
+	br
+	|7. Place the sensor labelled Five (5) into the bar that connects the motorcycle to its side car at the back of the driver seat. When facing the bar place the sensor at the right side of the bar. If the outer wall of the tricycle is too far wrap the sensor around the bar instead. Make sure the sensor is not blocked. 
+	br
+	br
+	|8. Place the sensor labelled Six (6) into the farther end of the back of the driver seat. If the wall is too far look for other places you can put the sensor. 
+	br
+	br
+	|9. Connect the wires to their corresponding sensors.
+	br
+	br
+	|10. Route the wires back to the device along the inside of the tricycle by using magnetic cable clips. If the side car of the tricycle is not made of steel use a duct tape instead to stick the wire.
+	
+	hr
+	
+	h3
+		b
+			a(name='devicechecking')
+				font(color='black') Device Checking (For all types of tricycles)
+			
+	table(width='100%')
+		tr
+			td(width='30%')
+				|1. Press the POWER button of the power bank.
+				br
+				br
+				img(src='/resources/images/10.jpg', height='200', width='290')
+			td(width='30%')
+				|2. Open the top lid of the device.
+				br
+				br
+				img(src='/resources/images/11.jpg', height='200', width='290')
+			td(width='30%')
+				|3. On the top of the board is a black switch as shown in Fig. Switch it to the ON position or the side nearest the red LED indicator.
+				br
+				br
+				br
+				br
+				br
+				br
+				br
+				br
+				br
+				br
+	hr
+	
+	h3
+		b
+			a(name='tricyclemodel')
+				font(color='black') Tricycle Model
+	br
+	| Fig. 1: Sample Tricycle for installation
+	img(src='/resources/images/12.jpg', height='200', width='400')
+	
+	hr
+	
+	h3
+		b
+			a(name='installationsetup') 
+				font(color='black') Installation Setup
+	br
+	table(width='100%')
+		tr
+			td
+				|Fig. 2:  Placement of sensor inside a tricycle
+				br
+				br
+				img(src='/resources/images/13.jpg', height='160', width='250')
+				br
+				br
+			td
+				|Fig. 3:  Placement of sensor inside a tricycle
+				br
+				br
+				img(src='/resources/images/14.jpg', height='160', width='250')
+				br
+				br
+			td
+				|Fig. 4:  Placement of sensor outside a tricylce
+				br
+				br
+				img(src='/resources/images/15.jpg', height='160', width='250')
+				br
+				br
+		tr
+			td
+				|Fig. 5:  Placement of GPS Antenna on the roof of tricycle
+				br
+				br
+				img(src='/resources/images/16.jpg', height='160', width='250')
+				br
+				br
+	hr
+	
+	h3
+		b
+			a(name='uninstallation')
+				font(color='black') Uninstallation
+	|1. Turn off the power bank by pressing its power button.
+	br
+	br
+	|2. Remove the sensors from their places. Do not remove the duct tape too quickly for it might pull the paint of the tricycle underneath. Put the sensors into the plastic box container.
+	br
+	br
+	|3. Remove the wires but do not disconnect them from the device. Do not remove the duct tape too quickly.
+	br
+	br
+	|4. Remove the device with the wires and place them on the plastic box container.
+	br
+	br
+	|5. At a convenient place remove the SD card from inside the device and keep them.
+	br
+	br
+	
+	hr
+			
+	div(align='center')
+		h1
+			b Software Post Processing
+	br
+	h3
+		b 
+			a(name='softwareprocessing')
+				font(color='black') Classes of Software Processing
+	|There are two classes of reports generated by the system.
+	br
+	br
+	|- Passenger related information
+	br
+	br
+	|- Passenger related information
+	br
+	br
+	p(align='justify')
+		|The 
+		b passenger stop 
+		|is a location where a passenger boards or alights from the vehicle. The vehicle stop is a location where it stopped either due to traffic, when a passenger boards or alights or when it is in the terminal waiting for passengers.
+		br
+	p(align='justify')
+		|An 
+		b area stop 
+		|is a passenger or vehicle stop that is common to a defined area such as a city. An area consists of multiple routes that may share the same area stop. Route stops are stops that belong to a specific route. Area stops common to two or more routes are labeled uniquely as route stops in their respective routes.
+		br
+	p(align='justify')
+		|A 
+		b survey data 
+		|consists of the status of each seat sensor along with time and GPS information.
+	br
+	hr
+	h3
+		b
+			a(name='cleansurveydata') 
+				font(color='black') Cleaning Survey Data Processing
+	br
+	table(width='100%')
+		tr
+			td(width='40%')
+				p(align='justify')
+					|Misreading from the sensors happens although not significantly. Corrections can be made by analysing the sensor data together with its GPS data. Sensors used in the device have limited range and thus cannot account for moments when the passenger is slightly rocked away from the sensor due to erratic movement of the tricycle forward and sideways. Therefore along the trip there are moments when the sensor would not detect the passenger. To avoid treating this as another boarding or alighting we can safely assume that if the tricycle is currently moving and the sensor changes status we can ignore this changes. After all it is not normal for passengers to board or alight from a moving tricycle.
+			td(width='40%')
+				img(src='resources/images/17.png', height='300', width='600', align='right')
+				p(align='center')
+					i Fig. 6: Clean Survey Data
+	br
+	hr
+	h3
+		b
+			a(name='origindestination') 
+				font(color='black') Origin Destination Processing
+	p(align='justify')
+		|Survey data from each sample is converted to origin destinations by taking note of when and where a sensor became “On” (meaning a passenger sat on the seat) and when and where the sensor became “Off” (a passenger got up from his seat and alights the vehicle). The origin and destinations are matched chronologically by seat.
+	br
+	hr		
+	h3
+		b
+			a(name='passareastop')
+				font(color='black') Area Stop Processing
+	table(width='100%')
+		tr
+			td(width='40%')
+				p(align='justify')
+					|To obtain area stops from the samples belonging to the area the origin destination information produced from these survey data is drawn on a map according to their location. The map is divided into grids of a predefined size. Each survey data that fall within a grid is then clustered and the centroid from this group of points is calculated. The centroid then becomes the location of an area stop and is then assigned a generated name.
+			td(width='40%')
+				img(src='resources/images/18.png', height='300', width='600', align='right')
+				p(align='center')
+					i Fig. 7: Upload Area Stops
+				br
+		tr
+			td(width='40%')
+				p(align='justify')
+					|The location of the origins and destinations is then compared to the list of area stops. The nearest area stops from the origin and destination then becomes route stops. If there is already an existing route stop that refers to the same area stop then this new route stop is not added to the list.
+			td(width='40%')
+				img(src='resources/images/19.jpg', height='300', width='600', align='right')
+				p(align='center')
+					i Fig. 8: Route Stop Processing
+					br
+					i &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (Green circles indicate centroid of grid)
+	br
+	hr
+	h3
+		b
+			a(name='passroutestop')
+				font(color='black') Route Stop Processing
+	table(width='100%')
+		tr
+			td(width='40%')
+				img(src='resources/images/20.jpg', height='300', width='550', align='right')
+				p(align='center')
+					i Fig. 9: Upload Route Stops
+			td(width='40%')
+				img(src='resources/images/24.jpg', height='300', width='550', align='right')
+				p(align='center')
+					i Fig. 10: Upload Route Stop Result
+					br
+					i &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (Green circles indicate matching area stops of survey data points)
+	br
+	hr
+	h3
+		b
+			a(name='boardingalighting')
+				font(color='black') Boarding Alighting Processing
+	p(align='justify')
+		|Boarding alighting information can easily be inferred from the origin destination information with the origin of a passenger corresponding to a count of boarding and the destination of a passenger counting as an alighting.
+	br
+	hr
+	h3
+		b
+			a(name='speedprofile')
+				font(color='black') Speed Profile Processing
+	p(align='justify')
+		|The GPS information of the survey data can be further processed to calculate the current speed of the tricycle. This information can then be used to know the various speeds of the vehicle as it travelled along the route.
+	br
+	hr
+	h3
+		b
+			a(name='hourlystat')
+				font(color='black') Hourly Stats Processing
+	table(width='100%')
+		tr
+			td(width='40%')
+				p(align='justify')
+					|The origin destination, boarding alighting and speed profile information can then be grouped by hour so that we can produce hourly statistics about the operation of the tricycle such as number of boarding’s and alighting’s, number of trips, average speed, maximum speed and percent of the hour that the tricycle is waiting and moving with passengers.
+			td(width='40%')
+				img(src='resources/images/21.jpg', height='300', width='600', align='right')
+				p(align='center')
+					i Fig. 11: Upload Survey Data
+	br
+	hr
+	h3
+		b
+			a(name='hourlystatmap')
+				font(color='black') Hourly Stats Map Processing
+	table(width='100%')
+		tr
+			td(width='40%')
+				p(align='justify')
+					|To easily comprehend the hourly statistics a map is generated with the GPS traces of the vehicle for that hour and the corresponding hourly statistics shown on a table.
+			td(width='40%')
+				img(src='resources/images/22.png', height='300', width='600', align='right')
+				p(align='center')
+					i Fig. 12: View Hourly Stats Map report
+	br
+	hr
+	h3
+		b
+			a(name='hpbaamp')
+				font(color='black') Hourly Passenger Boarding and Alighting Map Processing
+	table(width='100%')
+		tr
+			td(width='40%')
+				p(align='justify')
+					|Boarding alighting locations can be queried by hour and be displayed on a scrollable map.
+			td(width='40%')
+				img(src='resources/images/23.png', height='300', width='600', align='right')
+				p(align='center')
+					i Fig. 13: Hourly Passenger Boarding and Alighting Report
+	br
+	hr
+	h3
+		b
+			a(name='hvodmp')
+				font(color='black') Hourly Vehicle Origin Destination Map Processing
+	p(algin='justify')
+		|Vehicle origin and destination locations can be queried by hour and be displayed on a scrollable map.
+	br
+	hr
+	h3
+		b
+			a(name='pavodm')
+				font(color='black') Passenger and Vehicle OD Matrices
+	p(align='justify')
+		|The system has the capability to produce passenger and vehicle origin destination matrices that can be used by transport simulation and analysis software such as Cube. A complimentary list of area stops and their corresponding latitudes and longitudes is included together with the OD matrices.
+	br
+	hr
+	p(align='center')
+		font(color='gray')
+			|&copy;2016 STRIDE Consulting Inc.
+	br

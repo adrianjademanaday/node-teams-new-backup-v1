@@ -1,0 +1,109 @@
+// MIXINS
+
+mixin mainLink(label, value, url)
+  li(class= mainLink == value ? "active" : "")
+    a(href=url) #{label}
+
+mixin subLink(label, value, url)
+  li(class= subLink == value ? "active" : "")
+    a(href=url) #{label}
+    
+mixin deleteSurveyDataOnly(label, value, url)
+  li(class= subLink == value ? "active" : "")
+    a(href=url, id='deleteSurveyDataOnly') #{label}
+
+mixin deleteAll(label, value, url)
+  li(class= subLink == value ? "active" : "")
+    a(href=url, id='deleteAll') #{label}
+
+mixin subMenu(label, value)
+  li.dropdown(class= subMenu == value ? "active" : "")
+    a.dropdown-toggle(href='#', data-toggle='dropdown')
+      | #{label}
+      b.caret
+
+    ul.dropdown-menu
+      block
+
+mixin subMenuLink(label, value, url)
+  li(class= subMenuLink == value ? "active" : "")
+    a(href=url) #{label}
+
+
+// Main Menu
+
+nav.navbar.navbar-inverse(role='navigation', style='margin-bottom:5px')
+  .navbar-header
+    a.navbar-brand(href='#') TEAMS
+    
+  .collapse.navbar-collapse
+    ul.nav.navbar-nav
+
+      +mainLink('Home', 'HOME', '/')
+      +mainLink('Data', 'DATA', '/data/cleanSurveyData/initUpload')
+      +mainLink('Reports', 'REPORTS', '/reports/hourlyStats')
+      +mainLink('Manage', 'MANAGE', '/manage/routes')               
+      +mainLink('Test', 'TEST', '/test/data/areaStop/initUpload') 
+      +mainLink('Admin', 'ADMIN', '/admin/manage/main')
+      +mainLink('Logout', 'LOGOUT', '/logout')
+
+// Sub Menu
+
+nav.navbar.navbar-default(role='navigation')
+  .collapse.navbar-collapse
+    ul.nav.navbar-nav
+
+      // NOTE: using 'ifs' instead of 'if else if .. else' because jade parsing breaks
+      // when placing comment on top of 'else ifs'
+
+      // Home     
+      if mainLink == 'HOME'
+        +subLink('Dashboard', 'DASHBOARD', '/')
+        +subLink('User manual', 'USERMANUAL', '/usermanual')
+
+
+      // Data
+      if mainLink == 'DATA'
+        +subLink('Clean Survey Data', 'CLEAN_SURVEY_DATA', '/data/cleanSurveyData/initUpload')
+        +subLink('Pass. Area Stops', 'AREA_STOPS', '/data/areaStop/initUpload')
+        +subLink('Veh. Area Stops', 'VEHICLE_AREA_STOPS', '/data/vehicleAreaStop/initUpload')
+        +subLink('Pass. Route Stops', 'ROUTE_STOPS', '/data/routeStop/initUpload')
+        +subLink('Veh. Route Stops', 'VEHICLE_ROUTE_STOPS', '/data/vehicleRouteStop/initUpload')
+        +subLink('Pass. Survey Data', 'SURVEY_DATA', '/data/surveyData/initUpload')
+        +subLink('Veh. Survey Data', 'VEHICLE_SURVEY_DATA', '/data/vehicleSurveyData/initUpload')
+
+      // Reports
+      if mainLink == 'REPORTS'
+        +subLink('Hourly Stats', 'HOURLY_STATS', '/reports/hourlyStats')
+        +subLink('Passenger OD', 'ORIGIN_DESTINATIONS', '/reports/originDestinations')
+        +subLink('Passenger OD Matrix', 'OD_MATRIX', '/reports/odMatrix')
+        +subLink('Passenger Area Stops', 'AREA_STOPS', '/reports/areaStops')
+        +subLink('Vehicle OD', 'VEHICLE_ORIGIN_DESTINATIONS', '/reports/vehicleOriginDestinations')
+        +subLink('Vehicle OD Matrix', 'VEHICLE_OD_MATRIX', '/reports/vehicleOdMatrix')
+        +subLink('Vehicle Area Stops', 'VEHICLE_AREA_STOPS', '/reports/vehicleAreaStops')
+
+      // Manage
+      if mainLink == 'MANAGE'
+        +subLink('Area', 'AREAS', '/manage/areas')
+        +subLink('Routes', 'ROUTES', '/manage/routes')
+        +subLink('Users', 'USERS', '/manage/users')
+
+      // Test
+      if mainLink == 'TEST'
+        +subMenu('Data', 'DATA')
+          +subMenuLink('Area Stop', 'AREA_STOPS', '/test/data/areaStop/initUpload')
+          +subMenuLink('Route Stop', 'ROUTE_STOPS', '/test/data/routeStop/initUpload')
+          +subMenuLink('Survey Data', 'SURVEY_DATA', '/test/data/surveyData/initUpload')
+
+        +subMenu('Manage', 'Manage')
+          +subMenuLink('Area Stop', 'AREA_STOPS', '/test/data/areaStop/initUpload')
+          +subMenuLink('Route Stop', 'ROUTE_STOPS', '/test/data/routeStop/initUpload')
+          +subMenuLink('Survey Data', 'SURVEY_DATA', '/test/data/surveyData/initUpload')
+
+      // Admin
+      if mainLink == 'ADMIN'
+        +subLink('Manage Area', 'MANAGE_AREA', '/admin/manage/main')
+        +deleteSurveyDataOnly('Delete Survey Data Only', 'SURVEY_DATA_ONLY', '')
+        +deleteAll('Delete All', 'ALL', '')
+        +subLink('Reorder Area Stops', 'REORDER_AREA_STOPS', '/admin/reorderAreaStops/show')
+        +subLink('Reorder Vehicle Area Stops', 'REORDER_VEHICLE_AREA_STOPS', '/admin/reorderVehicleAreaStops/show')

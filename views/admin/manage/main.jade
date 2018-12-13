@@ -1,0 +1,29 @@
+extends ../../_layouts/default
+
+block assignments
+	-mainLink = 'ADMIN'
+	-subLink = 'MANAGE_AREA'
+	-pageTitle = 'Manage Area'
+	
+block content
+	h1 Manage Area
+	hr
+	h3
+	.addAreaRoute
+		a(href='/admin/manage/initAddArea') Add Area
+		a(href='/admin/manage/initAddRoute') Add Route
+						
+	table(class='areaTable')
+		th Area Name
+		th Number of Routes
+		th Area LatLang
+		th Options
+		each area in areas
+			tr(class='areaChange')
+				td(width='27%') #{area.name}
+				td(width='18%')
+					a(href='/admin/manage/viewRoute?id=#{area._id}&name=#{area.name}', title='View #{area.name} routes') #{area.numberOfRoutes}
+				td(width='40%') #{area.lat}, #{area.lang}
+				td(width='30%')
+					a(class='edit', href='/admin/manage/initEditArea?id=#{area._id}') Update
+					a(class='delete', href='/admin/manage/removeArea?id=#{area._id}') Delete

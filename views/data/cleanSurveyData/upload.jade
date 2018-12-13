@@ -1,0 +1,68 @@
+extends ../../_layouts/forms/form
+
+include ../../_includes/_mixins/formMixins
+include ../../_includes/_mixins/ngFormMixins
+
+prepend assignments
+	-mainLink = 'DATA'
+	-subLink = 'CLEAN_SURVEY_DATA'
+	-cancelUrl = '/home'
+	-baseUrl = cancelUrl
+	-uploadUrl = '/data/cleanSurveyData/upload'
+	-pageTitle = 'Clean Survey Data'
+	-ctrl = 'uploadCtrl'
+
+block content
+	h1 #{pageTitle}
+		a(id='help', class='help', title='show tips',href='#help') Help?
+	hr
+
+	.row
+		.col-md-6			
+			form.form-horizontal(method='POST', action=uploadUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12
+						+text('numberOfSensors', 'NumberOfSensors', numberOfSensors)
+						+text('temporarilyStoppedThreshold', 'Temporarily Stopped Threshold', temporarilyStoppedThreshold)
+
+						.form-group
+							label.col-md-4.control-label(for='surveyData') Survey Data
+							.col-md-7									
+								input.form-control.input-md(name='surveyData', type='file', ng-model='surveyDataFilename', ng-change='updateFilenames()')
+						
+						+ngTextWithSuffix('outputZipFilename', 'Output Zip File', '.zip', outputZipFilename)							
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label #{label}		
+							.col-md-10.well
+								+submitButton('Upload')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+		.help_box
+			h4
+				b Clean Survey Data Processing
+				a(id='close', class='close') x
+			|1. Make sure that the data saved on .csv file format.
+			br
+			a(href='https://en.wikipedia.org/wiki/Comma-separated_values', target='blank') &nbsp&nbsp&nbsp&nbspRead the cvs file format.
+			br
+			|2. Compress the .csv file to zip file.
+			br
+			|3. Then choose the zip file and click upload.
+			br
+			hr
+			h5 Looks like:
+			img(class='help_img',src='/resources/images/data/1.jpg')
+			br
+			hr
+			h5
+				b Note:
+			i This is the first process that you need to create a good output of data.
+			br
+			br
+
+block scriptIncludes
+	script(type='text/javascript', src='/controllers/data/cleanSurveyData/uploadCtrl.js')

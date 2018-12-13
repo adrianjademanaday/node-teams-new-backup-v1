@@ -1,0 +1,15 @@
+extends default
+
+block content
+	.row
+		.col-md-12
+			h2 #{pageTitle}
+			hr
+
+	.row
+		.col-md-2
+			div.list-group
+				block pageNavigation
+
+		.col-md-10
+			block pageContent

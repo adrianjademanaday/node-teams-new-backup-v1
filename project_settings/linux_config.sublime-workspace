@@ -1,0 +1,434 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"models",
+				"modelsDir"
+			],
+			[
+				"co",
+				"col-md-4"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"User",
+				"UserSchema	(?)"
+			],
+			[
+				"Pers",
+				"PersonSchema	(?)"
+			],
+			[
+				"con",
+				"controllers"
+			],
+			[
+				"Cat",
+				"CatSchema	(?)"
+			],
+			[
+				"prot",
+				"prototype	{}"
+			],
+			[
+				"tostr",
+				"toString(radix?)"
+			],
+			[
+				"proto",
+				"prototype	(?)"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 56.0,
+		"selected_items":
+		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"syn c",
+				"Set Syntax: C"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax c",
+				"Set Syntax: C"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"set syntax jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"syntax jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"set",
+				"Set Syntax: Jade"
+			],
+			[
+				"jad",
+				"Set Syntax: Jade"
+			],
+			[
+				"install packa",
+				"Package Control: Install Package"
+			],
+			[
+				"installpac",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"list packa",
+				"Package Control: List Packages"
+			],
+			[
+				"installpack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"hint",
+				"JSHint"
+			],
+			[
+				"listpacka",
+				"Package Control: List Packages"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show Error List"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 141.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/jason/Desktop/node/project_settings/linux_dev.sublime-project",
+		"/home/jason/Desktop/node/project_settings/win_config.sublime-project",
+		"/home/jason/Desktop/node/project_settings/win_dev.sublime-project",
+		"/home/jason/Desktop/node/project_settings/linux_config.sublime-project",
+		"/home/jason/Desktop/node/project_settings/config_view.sublime-project",
+		"/home/jason/Desktop/node/public/app.js",
+		"/home/jason/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/jason/Desktop/node/project_settings/development_view.sublime-project",
+		"/home/jason/Desktop/node/public/controllers/homeController.js",
+		"/home/jason/Desktop/node/config_project_view.sublime-project",
+		"/home/jason/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/jason/Desktop/node/server.js",
+		"/home/jason/Desktop/ArduinoSketch/ArduinoSketch.ino",
+		"/home/jason/Desktop/BEAMS_SERVER/public/controllers/routesController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/partials/manage/list.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/app.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/partials/home.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/controllers/partialsController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/controllers/manageRoutesController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/views/index.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/layouts/includes/navigation.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/layouts/default.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/partials/manage/routes.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/controllers/homeController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/controllers/indexController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/views/login.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/controllers/authenticationController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/controllers/loginController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/url_mappings.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/middlewares/authentication.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/partials/manage/routes.html",
+		"/home/jason/Desktop/BEAMS_SERVER/public/partials/routes.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/layouts/includes/footer.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/layouts/includes/header.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/index2.html",
+		"/home/jason/Desktop/BEAMS_SERVER/server.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/resources/js/angular.min.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/layouts/footer.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/middlewares/authentication.js",
+		"/home/jason/Desktop/BEAMS_SERVER/middlewares/partialsHandler.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/authorizations.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/security.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/layouts/navigation.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/layouts/header.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/index.jade",
+		"/home/jason/Desktop/BEAMS_SERVER/public/showOrdersController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/addOrderController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/templates/add_order.html",
+		"/home/jason/Desktop/BEAMS_SERVER/public/templates/show_orders.html",
+		"/home/jason/Desktop/BEAMS_SERVER/public/index.html",
+		"/home/jason/Desktop/BEAMS_SERVER/public/templates/app.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/sample1.html",
+		"/home/jason/Desktop/BEAMS_SERVER/public/templates/showOrdersController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/controllers/indexController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/partials/first.html",
+		"/home/jason/Desktop/BEAMS_SERVER/public/partials/second.html",
+		"/home/jason/Desktop/BEAMS_SERVER/public/js/angular.min.js",
+		"/home/jason/Desktop/BEAMS_SERVER/public/html/test.html",
+		"/home/jason/Desktop/BEAMS_SERVER/backup.js",
+		"/home/jason/Desktop/BEAMS_SERVER/app.js",
+		"/home/jason/Desktop/BEAMS_SERVER/models/user.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/bootstrap.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/models.js",
+		"/home/jason/Desktop/BEAMS_SERVER/controllers/routeController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/models/route.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/controllers.js",
+		"/home/jason/Desktop/BEAMS_SERVER/models/person.js",
+		"/home/jason/Desktop/BEAMS_SERVER/controllers/personController.js",
+		"/home/jason/Desktop/BEAMS_SERVER/configs/resources",
+		"/home/jason/Desktop/BEAMS_SERVER/controllers/config.js",
+		"/home/jason/Desktop/OrmTest/modules/vehicle.js",
+		"/home/jason/Desktop/OrmTest/modules/car.js",
+		"/home/jason/Desktop/OrmTest/modules/person.js",
+		"/home/jason/Desktop/OrmTest/modules/student.js",
+		"/home/jason/Desktop/OrmTest/modules/addressBook.js",
+		"/home/jason/Desktop/OrmTest/modules/duck.js",
+		"/home/jason/Desktop/OrmTest/modules/moduleA.js",
+		"/home/jason/Desktop/RestTest/server.js",
+		"/home/jason/Desktop/RestTest/models/person.js",
+		"/home/jason/Desktop/RestTest/untitled.js",
+		"/home/jason/.config/sublime-text-2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/jason/.config/sublime-text-2/Packages/User/SublimeLinter.sublime-settings"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n     ",
+			"personMod",
+			"Person"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.ArduinoSketch":
+	{
+		"height": 114.0
+	},
+	"output.exec":
+	{
+		"height": 233.0
+	},
+	"output.stino_log":
+	{
+		"height": 114.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"homecontr",
+				"public/controllers/homeController.js"
+			],
+			[
+				"manage",
+				"public/controllers/manageRoutesController.js"
+			],
+			[
+				"route",
+				"public/partials/manage/routes.jade"
+			],
+			[
+				"home",
+				"public/partials/home.jade"
+			],
+			[
+				"inde",
+				"views/index.jade"
+			],
+			[
+				"index",
+				"controllers/indexController.js"
+			],
+			[
+				"navi",
+				"public/layouts/includes/navigation.jade"
+			],
+			[
+				"authentication",
+				"controllers/authenticationController.js"
+			],
+			[
+				"logincontr",
+				"public/controllers/loginController.js"
+			],
+			[
+				"authen",
+				"controllers/authenticationController.js"
+			],
+			[
+				"index2",
+				"public/index2.html"
+			],
+			[
+				"ser",
+				"server.js"
+			],
+			[
+				"url",
+				"configs/url_mappings.js"
+			],
+			[
+				"boots",
+				"configs/bootstrap.js"
+			],
+			[
+				"user",
+				"models/user.js"
+			],
+			[
+				"person",
+				"modules/person.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

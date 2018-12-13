@@ -1,0 +1,64 @@
+extends ../../_layouts/default
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+block assignments
+	-mainLink = 'ADMIN'
+	-subLink = 'MANAGE_AREA'
+	-pageTitle = 'Add New Area'
+	-cancelUrl = '/admin/manage/main'
+	-baseUrl = cancelUrl
+	-uploadUrl = '/admin/manage/addArea'
+	-ctrl = 'uploadCtrl'
+	
+block content
+	h1 #{pageTitle}
+		a(id='help', class='help', title='show tips',href='#help') Show Map?
+	hr
+	.row
+		.col-md-6
+			form.form-horizontal(method='POST', action=uploadUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12						
+						+text('nameOfArea', 'Name of Area', '')
+						+text('topLeftLat', 'Top Left Lat', '')
+						+text('topLeftLng', 'Top Left Lng', '')
+						+text('bottomRightLat', 'Bottom Right Lat', '')
+						+text('bottomRightLng', 'Bottom Right Lng', '')
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Save')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+		.help_box
+			h4
+				b Passenger Area Stop Processing
+				a(id='close', class='close') x
+			i After cleaning the data from the previous process. Now you need to upload the output or the cleaned data from the the previous process.
+			br
+			br
+			|1. Select the area of the uploaded file. Now it will generate the boundaries of the area.
+			br
+			|2. Select seat configuration. Default is 3 in and 2 driver at back.
+			br
+			|3. Then choose the zip file and click upload. The zip file that needs here is the output of the previous process.
+			br
+			b Located at: 
+			font(color='darkblue') teams/data/downloads/(name-of-zip-file)-output.zip
+			hr
+			h5 Looks like:
+			img(class='help_img',src='/resources/images/data/2.png')
+			br
+			hr
+			h5
+				b Note:
+			i This is the second process. This process will create a areastop table on the database and stored the collected data of the uploaded file.
+			i The collected data that was stored on the database will be the references of the next or other processes.
+			br
+			br

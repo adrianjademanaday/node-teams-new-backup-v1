@@ -1,0 +1,153 @@
+// FORMS
+
+mixin ngFormGroup(name, label)
+  .form-group
+    label.col-md-4.control-label(for=name) #{label}   
+    .col-md-7
+      block
+
+
+// TEXT
+
+mixin ngText(name, label, value)
+  +ngFormGroup(name, label)
+    input.form-control.input-md(name=name, type='text', value=value, ng-model=name)
+
+mixin ngTextWithSuffix(name, label, suffix, value)
+  +ngFormGroup(name, label)
+    .input-group
+      input.form-control(name=name, type='text', value=value, ng-model=name)
+      span.input-group-addon #{suffix}
+
+mixin ngPassword(name, label, value)
+  +ngFormGroup(name, label)
+    input.form-control.input-md(name='textinput', type='password', value=value)
+    
+mixin ngTextArea(name, label, value)
+  +ngFormGroup(name, label)
+    textarea.form-control(name=name) #{value}
+
+mixin ngHidden(name, value)
+  input(name=name, type='hidden', value=value)
+
+
+// FILE
+
+mixin ngFile(name, label)
+  +ngFormGroup(name, label)
+    .form-group
+      label.col-md-4.control-label(for=name) #{label}   
+      .col-md-7     
+        input.form-control.input-md(name=name, type='file', ng-model='"' + name + '"', ng-change='updateFilenames')
+
+
+// RADIO AND CHECKBOX
+
+mixin radio(name, label, options, selected)
+  +ngFormGroup(name, label)
+    for o in options
+      .radio
+        label(for='radios-0')
+          if o.id === selected
+            input(type='radio', name=name, value=o.name, checked='checked')
+            | #{o.name}
+          else
+            input(type='radio', name=name, value=o.name)
+            | #{o.name} 
+
+mixin inlineRadio(name, label, options, selected)
+  +ngFormGroup(name, label)
+    for o in options
+      label.radio-inline(for=o.id)
+        if o.id === selected
+          input(type='radio', name=name, value=o.name checked='checked')
+          | #{o.name}
+        else
+          input(type='radio', name=name, value=o.name)
+          | #{o.name}
+
+mixin checkBox(name, label, options, selected)
+  +ngFormGroup(name, label)
+    for o in options
+      .checkbox
+        label(for=o.id)
+          if selected.indexOf(o.id) > -1
+            input(type='checkbox', name=name, value=o.name, checked='checked')
+            | #{o.name}
+          else
+            input(type='checkbox', name=name, value=o.name)
+            | #{o.name}
+
+mixin inlineCheckBox(name, label, options, selected)
+  +ngFormGroup(name, label)
+    for o in options
+      label.checkbox-inline(for=o.id)
+        if selected.indexOf(o.id) > -1
+          input(type='checkbox', name=name, value=o.name checked='checked')
+          | #{o.name}
+        else
+          input(type='checkbox', name=name, value=o.name)
+          | #{o.name}
+
+
+// SELECT
+
+mixin ngSelectNgChange(name, label, options, selected, model, onChange)
+  +ngFormGroup(name, label)
+    select.form-control(name=name, ng-model=model, ng-change=onChange)
+      option(value='') Select a value
+        for o in options
+          option(value=o.id) #{o.name}
+
+mixin ngSelect(name, label, selected, model, options)
+  +ngFormGroup(name, label)
+    select.form-control(name=name, ng-model=model)
+      option(value='') Select a value
+      option(ng-repeat='e in #{options}', value='{{e._id}}') {{e.name}}
+
+mixin ngSelectWithNoSelectedText(name, label, selected, model, options, noSelectedText)
+  +ngFormGroup(name, label)
+    select.form-control(name=name, ng-model=model)
+      option(value='') #{noSelectedText}
+      option(ng-repeat='e in #{options}', value='{{e._id}}') {{e.name}}
+
+mixin ngSelectDependentNgChange(name, label, selected, model, options, onChange)
+  +ngFormGroup(name, label)
+    select.form-control(name=name, ng-model=model, ng-change=onChange)
+      option(value='') Select a value
+      option(ng-repeat='e in #{options}', value='{{e._id}}') {{e.name}}
+
+
+// BUTTON
+
+mixin ngDefaultButton(onClick) 
+  button.btn.btn-default(type='button', style='margin-right: 5px', ng-click=onClick) {{showBoardingOrAlighting}}
+
+mixin resetButton(label) 
+  button.btn.btn-default(type='reset', style='margin-right: 5px') #{label == null ? 'Reset' : label}
+
+mixin ngSubmitButton(label, value, onClick) 
+  button.btn.btn-primary(type='submit', style='margin-right: 5px', value=value, ng-click=onClick) #{label}
+
+mixin urlButton(label, url, type)
+  a(href=url, style='text-decoration: none;')
+    +button(label, type)
+
+
+// FORM ACTIONS
+
+mixin formActions(baseUrl)
+  .form-group
+    label.col-md-2.control-label #{label}   
+    .col-md-10.well
+      +submitButton('Save and Add', 'SAVE_AND_ADD')
+      +submitButton('Save', 'SAVE')
+      +resetButton()
+      +urlButton('Cancel', baseUrl)
+
+
+// DATE
+
+mixin date(name, label, value)
+
+mixin dateRange(name, fromvalue, toValue, fromLabel, toLabel)

@@ -1,0 +1,5 @@
+mixin pageNavigation(label, url, value)
+	if value == selectedPage
+		a.list-group-item.active(href=url) #{label}
+	else
+		a.list-group-item(href=url) #{label}

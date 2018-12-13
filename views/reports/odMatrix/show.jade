@@ -1,0 +1,40 @@
+extends ../../_layouts/forms/form
+
+include ../../_includes/_mixins/ngFormMixins
+include ../../_includes/_mixins/formMixins
+
+prepend assignments
+	-mainLink = 'REPORTS'
+	-subLink = 'OD_MATRIX'
+	-baseUrl = '/'
+	-postUrl = '/reports/odMatrix/fetch'
+	-pageTitle = 'Download OD Matrix'
+	-ctrl = 'showCtrl'
+
+
+block content
+	h1 #{pageTitle}
+	hr
+
+	.row
+		.col-md-6			
+			form.form-horizontal(method='POST', action=postUrl, enctype='multipart/form-data')
+				.row
+					.col-md-12						
+						+ngSelectNgChange('areaId', 'Area', areas, areaId, 'area', 'loadRoutes()')
+						+ngSelect('routeId', 'Route', routeId, 'route', 'routes')						
+						+text('outputFilename', 'Output Filename', outputFilename)
+						+text('hour', 'Hour', hour)
+
+				.row
+					.col-md-12
+						hr
+						.form-group
+							label.col-md-2.control-label
+							.col-md-10.well
+								+submitButton('Download')
+								+resetButton()
+								+urlButton('Cancel', baseUrl)
+
+block scriptIncludes
+	script(type='text/javascript', src='/controllers/reports/odMatrix/showCtrl.js')
